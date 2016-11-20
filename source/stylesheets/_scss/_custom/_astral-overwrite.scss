@@ -1,0 +1,65 @@
+//Default Alt Button WHITE
+//---------------------------------------
+button.btn-default-alt-wh,
+.button.btn-default-alt-wh,
+input[type="submit"].btn-default-alt-wh,
+input[type="reset"].btn-default-alt-wh,
+input[type="button"].btn-default-alt-wh {
+    background-color: transparent;
+    color: $card-font-color;
+    border-color: $card-font-color;
+    .svgicon {
+        fill: $card-font-color;
+    }
+}
+
+.button.btn-default-alt-wh:focus,
+button.btn-default-alt-wh:focus,
+input[type="submit"].btn-default-alt-wh:focus,
+input[type="reset"].btn-default-alt-wh:focus,
+input[type="button"].btn-default-alt-wh:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: $card-font-color;
+    border-color: $card-font-color;
+    outline: none;
+    .svgicon {
+        fill: $card-font-color;
+    }
+}
+
+.button.btn-default-alt-wh:hover,
+.button.btn-default-alt-wh:focus:hover,
+button.btn-default-alt-wh:hover,
+button.btn-default-alt-wh:focus:hover,
+input[type="submit"].btn-default-alt-wh:hover,
+input[type="submit"].btn-default-alt-wh:focus:hover,
+input[type="reset"].btn-default-alt-wh:hover,
+input[type="reset"].btn-default-alt-wh:focus:hover,
+input[type="button"].btn-default-alt-wh:hover,
+input[type="button"].btn-default-alt-wh:focus:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: $card-font-color;
+    border-color: $card-font-color;
+    outline: none;
+    .svgicon {
+        fill: $card-font-color;
+    }
+}
+
+//Spinner
+button.btn-default-alt-wh,
+.button.btn-default-alt-wh,
+input[type="submit"].btn-default-alt-wh,
+input[type="reset"].btn-default-alt-wh,
+input[type="button"].btn-default-alt-wh {
+    .spinner,
+    .spinner-md,
+    .spinner-sm {
+        .ring {
+            stroke: $card-font-color;
+        }
+        .path {
+            stroke: $card-font-color;
+        }
+    }
+}
