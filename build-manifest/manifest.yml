@@ -1,0 +1,6 @@
+applications:
+- name: elliotdahl-astral
+  memory: 128M
+  instances: 1
+  buildpack: staticfile_buildpack
+
