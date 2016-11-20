@@ -44,7 +44,7 @@ box-shadow: 4px 4px 10px 0px rgba(50,19,51,0.25);
 }
 
 .card-home {
-	z-index:30;
+	z-index:20;
     position: relative;
     width: 375px;
     height: 667px;
@@ -137,7 +137,11 @@ box-shadow: 4px 4px 10px 0px rgba(50,19,51,0.25);
 	height:100%;
 	overflow:hidden;
 }
-.intro-bg-img {
+.intro-bg-img img {
+	position:absolute;
+	bottom:40px;
+	left: 50%;
+    transform: translateX(-50%);
 	width:600px;
 	height:600px;
 }
@@ -145,6 +149,15 @@ box-shadow: 4px 4px 10px 0px rgba(50,19,51,0.25);
     position: absolute;
 	bottom:-258px;
 	transition: all .25s ease-out;
+	background-color: $card-bg;
+    color: $card-font-color;
+    padding: $base-unit * 2;
+    //overflow:hidden;
+    .svgicon {
+    	svg {
+    		fill:$card-font-color;
+    	}
+    }
 }
 .intro-panel-up {
 	bottom: 0;
@@ -177,3 +190,4 @@ h2 {
     font-size: 24px;
     font-weight: 300;
 }
+
