@@ -1,3 +1,9 @@
+//Only missing functionality is the resizing 
+//of a lg 6 column to a sm 2 column on 
+//screen change. Need to investigate further.
+
+
+
 //New Flexbox Grid
 .grid {
     box-sizing: border-box;
@@ -421,7 +427,7 @@
 //////////////////
 //Media Queries
 //////////////////
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: $screen-sm) {
     // .grid-sm {
         .col-sm {
             flex: 100%;
@@ -430,7 +436,7 @@
     // }
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: $screen-md) {
     // .grid-md {
         .col-md {
             flex: 100%;
@@ -439,7 +445,7 @@
     // }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: $screen-lg) {
     // .grid-lg {
         .col-lg {
             flex: 100%;

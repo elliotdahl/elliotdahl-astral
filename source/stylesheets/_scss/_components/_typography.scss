@@ -3,11 +3,17 @@ html {
 }
 
 body {
+    font-family: $font-family-sans-serif;
     font-size:16px;
     /* currently ems cause chrome bug misinterpreting rems on body element */
-    line-height: 1.5;
+    line-height: 24px;
     font-weight: 400;
     color: $dark-2;
+}
+
+//Font bug fix
+input, textarea, keygen, select, button {
+    font-family: $font-family-sans-serif;
 }
 
 .page {
@@ -21,9 +27,6 @@ body {
 .raleway {
     font-family: 'Raleway', sans-serif;
 }
-.lato {
-    font-family: 'Lato', sans-serif;
-}
 
 
 /* Typography
@@ -36,44 +39,50 @@ h4,
 h5,
 h6 {
     margin-top: 0;
-    margin-bottom: ($base-unit*2);
+    margin-bottom: 0;
+    //margin-bottom: ($base-unit*2);
     font-weight: 400;
-    line-height: 1;
+    //line-height: 1;
 }
 
 h1 {
-    font-size: 48px;
-    letter-spacing: -.1rem;
-    font-weight: 300;
+    font-size: 32px;
+    //line-height: 32px;
+    line-height: 1;
+    letter-spacing: -.5px;
 }
 
 h2 {
-    font-size: 40px;
-    letter-spacing: -.1rem;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -.5px;
 }
 
 h3 {
-    font-size: 32px;
-    letter-spacing: -.1rem;
+    font-size: 20px;
+    line-height: 32px;
 }
 
 h4 {
-    font-size: 24px;
-    letter-spacing: -.08rem;
+    font-size: 18px;
+    line-height: 24px;
 }
 
 h5 {
-    font-size: 20px;
-    letter-spacing: -.05rem;
+    font-size: 16px;
+    line-height: 24px;
+    //letter-spacing: -.05rem;
 }
 
 h6 {
     font-size: 13px;
-    letter-spacing: 0;
+    line-height: 20px;
+    letter-spacing: .25px;
 }
 
 p {
     font-size: 14px;
+    line-height: 20px;
     margin-top: 0;
     margin-bottom: ($base-unit*2)
 }
@@ -85,18 +94,23 @@ p {
 
 .type-xs {
     font-size: 12px;
+    line-height: 20px;
+    letter-spacing: .25px;
 }
 
 .type-sm {
     font-size: 14px;
+    line-height: 20px;
 }
 
 .type-md {
     font-size: 16px;
+    line-height: 24px;
 }
 
 .type-lg {
     font-size: 18px;
+    line-height: 24px;
 }
 
 //Ellipsis
@@ -130,26 +144,24 @@ p {
 -------------------------------------------*/
 
 .em-low {
-    font-weight: 300
+    font-weight: 300;
 }
 
-.em-normal {
-    font-weight: 400
-}
-
-.em-semi {
-    font-weight: 600
+.em-default {
+    font-weight: 400;
 }
 
 .em-high {
-    font-weight: 700
+    font-weight: 600;
 }
-.em-super {
-    font-weight: 900
+
+.em-max {
+    font-weight: 700;
 }
-.em-ultra {
-    font-weight: 900
-}
+
+// .em-ultra {
+//     font-weight: 900
+// }
 
 .em-alt {
     text-transform: uppercase;
@@ -163,6 +175,3 @@ p {
     color: #fff !important;
 }
 
-// .type-blue-500 {
-//     color: $mdl-color-blue-500 !important;
-// }
