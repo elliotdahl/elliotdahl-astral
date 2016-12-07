@@ -54,7 +54,7 @@ box-shadow: 4px 4px 10px 0px rgba(50,19,51,0.25);
     // background-repeat: no-repeat;
     // background-attachment: fixed;
     // background-position-y:106%;
-    // background-position-x:75%; 
+    // background-position-x:75%;
     // background-size: 640px 640px;
 }
 
@@ -91,7 +91,7 @@ box-shadow: 4px 4px 10px 0px rgba(50,19,51,0.25);
 	-moz-box-shadow:none;
 	&:after {
 		opacity: 0;
-		
+
 	}
 }
 
@@ -128,7 +128,7 @@ box-shadow: 4px 4px 10px 0px rgba(50,19,51,0.25);
 	-moz-box-shadow:none;
 	&:after {
 		opacity: 0;
-		
+
 	}
 }
 //Intro Slider
@@ -147,7 +147,7 @@ box-shadow: 4px 4px 10px 0px rgba(50,19,51,0.25);
 }
 .intro-panel {
     position: absolute;
-	bottom:-240px;
+	bottom:-190px;
 	transition: all .25s ease-out;
 	background-color: $card-bg;
     color: $card-font-color;
@@ -163,7 +163,7 @@ box-shadow: 4px 4px 10px 0px rgba(50,19,51,0.25);
 	bottom: 0;
 }
 #intro-expand {
-	
+
 }
 #intro-icon {
 	font-size:40px;
@@ -190,4 +190,3 @@ h2 {
     font-size: 24px;
     font-weight: 300;
 }
-
