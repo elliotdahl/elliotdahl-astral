@@ -57,7 +57,35 @@ box-shadow: 4px 4px 10px 0px rgba(50,19,51,0.25);
     // background-position-x:75%;
     // background-size: 640px 640px;
 }
+a {
+  color:inherit;
+  text-decoration: underline;
+  &:hover {
+    color:inherit;
+  }
+}
 
+a.card-link {
+  color:inherit;
+  text-decoration: none;
+
+  &:hover {
+    //color:white;
+
+    .type-title {
+      position: relative;
+      &:after {
+        content:"";
+        position: absolute;
+        top:0;
+        left:-40px;
+        height:56px;
+        width:2px;
+        background-color:$card-font-color;
+      }
+    }
+  }
+}
 .card-left {
 	z-index:10;
     position: absolute;
@@ -147,7 +175,7 @@ box-shadow: 4px 4px 10px 0px rgba(50,19,51,0.25);
 }
 .intro-panel {
     position: absolute;
-	bottom:-190px;
+	bottom:-247px;
 	transition: all .25s ease-out;
 	background-color: $card-bg;
     color: $card-font-color;

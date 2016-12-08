@@ -19,7 +19,8 @@ title: Elliot Dahl
     .card.card-home
       .intro-container
         .intro-bg-img
-          %img{:src => "images/selp-placehold.png"}
+          //%img{:src => "images/selp-placehold.png"}
+          %img{:src => "images/placeholder.png"}
         .intro-panel
           .grid.mbxl#intro-expand
             .col
@@ -29,7 +30,10 @@ title: Elliot Dahl
               .svgicon#intro-icon
                 =partial 'images/svg-lib/chevron_up.svg'
 
-          .type-lg.mbxxl I’m a designer who dreams in front-end, thinks about design systems, and talks about full stack UX. Designing developer experiences at Pivotal Cloud Foundry.
+          .type-lg.mbl
+            I’m a designer who dreams in front-end, thinks about design systems, and talks about full stack UX. Designing developer experiences at
+            %a{:href => "http://pivotal.io", :target => "_blank"} Pivotal Cloud Foundry.
+          .type-lg.mbxxl I spend the rest of my time drawing spaceships, backpacking, and reading science fiction.
           .grid
             .col.txt-c
               %button.btn.btn-default-alt-wh.btn-lg#projects Projects
@@ -43,41 +47,46 @@ title: Elliot Dahl
           .col.col-fixed
             .svgicon.type-title#close-projects
               =partial 'images/svg-lib/close.svg'
-        .grid.mbn.grid-nogutter
-          .col.col-fixed
-            .svgicon.type-title.ptm.prl
-              =partial 'images/svg-lib/info_outline.svg'
-          .col
-            .type-title Kessel Run
-            .type-lg.mbxxl In less than 12 parsecs? Doubtful.
-        .grid.mbn.grid-nogutter
-          .col.col-fixed
-            .svgicon.type-title.ptm.prl
-              =partial 'images/svg-lib/info_outline.svg'
-          .col
-            .type-title Solar System
-            .type-lg.mbxxl A css modeling of our planets.
-        .grid.mbn.grid-nogutter
-          .col.col-fixed
-            .svgicon.type-title.ptm.prl
-              =partial 'images/svg-lib/info_outline.svg'
-          .col
-            .type-title 8 Gauge
-            .type-lg.mbxxl The 8pt CSS Framework.
-        .grid.mbn.grid-nogutter
-          .col.col-fixed
-            .svgicon.type-title.ptm.prl
-              =partial 'images/svg-lib/info_outline.svg'
-          .col
-            .type-title Web Weaver
-            .type-lg.mbxxl Crafting your digital experience.
-        .grid.mbn.grid-nogutter
-          .col.col-fixed
-            .svgicon.type-title.ptm.prl
-              =partial 'images/svg-lib/info_outline.svg'
-          .col
-            .type-title Foldspace
-            .type-lg.mbxxl 3D printed jewelry.
+        %a.card-link{:href => "http://kessel.elliotdahl.com", :target => "_blank"}
+          .grid.mbn.grid-nogutter
+            .col.col-fixed
+              .svgicon.type-title.ptm.prl
+                =partial 'images/svg-lib/info_outline.svg'
+            .col
+              .type-title Kessel Run
+              .type-lg.mbxxl In less than 12 parsecs? Doubtful.
+        %a.card-link
+          .grid.mbn.grid-nogutter
+            .col.col-fixed
+              .svgicon.type-title.ptm.prl
+                =partial 'images/svg-lib/info_outline.svg'
+            .col
+              .type-title Solar System
+              .type-lg.mbxxl A css modeling of our planets.
+        %a.card-link
+          .grid.mbn.grid-nogutter
+            .col.col-fixed
+              .svgicon.type-title.ptm.prl
+                =partial 'images/svg-lib/info_outline.svg'
+            .col
+              .type-title 8 Gauge
+              .type-lg.mbxxl The 8pt CSS Framework.
+        %a.card-link{:href => "http://webweaver.cfapps.io", :target => "_blank"}
+          .grid.mbn.grid-nogutter
+            .col.col-fixed
+              .svgicon.type-title.ptm.prl
+                =partial 'images/svg-lib/info_outline.svg'
+            .col
+              .type-title Web Weaver
+              .type-lg.mbxxl Crafting your digital experience.
+        %a.card-link{:href => "http://foldspace.co", :target => "_blank"}
+          .grid.mbn.grid-nogutter
+            .col.col-fixed
+              .svgicon.type-title.ptm.prl
+                =partial 'images/svg-lib/info_outline.svg'
+            .col
+              .type-title Foldspace
+              .type-lg.mbxxl 3D printed jewelry.
 
     .card.card-right.card-right-hidden
       .card-content
@@ -87,39 +96,44 @@ title: Elliot Dahl
           .col.col-fixed
             .svgicon.type-title#close-contact
               =partial 'images/svg-lib/close.svg'
-        .type-lg.mbxxl I like to talk about spaceships, creativity, new ventures, and whether or not I can animate it with CSS (I can).
-        .grid.mbn.grid-nogutter
-          .col.col-fixed
-            .svgicon.type-title.ptm.prl
-              =partial 'images/svg-lib/close.svg'
-          .col
-            .type-title Twitter
-            .type-lg.mbxxl Occasially clever. Mostly pictures.
-        .grid.mbn.grid-nogutter
-          .col.col-fixed
-            .svgicon.type-title.ptm.prl
-              =partial 'images/svg-lib/close.svg'
-          .col
-            .type-title Instagram
-            .type-lg.mbxxl Dump of sketches and big ideas.
-        .grid.mbn.grid-nogutter
-          .col.col-fixed
-            .svgicon.type-title.ptm.prl
-              =partial 'images/svg-lib/close.svg'
-          .col
-            .type-title Linkedin
-            .type-lg.mbxxl Because I'm professional.
-        .grid.mbn.grid-nogutter
-          .col.col-fixed
-            .svgicon.type-title.ptm.prl
-              =partial 'images/svg-lib/close.svg'
-          .col
-            .type-title Medium
-            .type-lg.mbxxl I can read and write too.
-        .grid.mbn.grid-nogutter
-          .col.col-fixed
-            .svgicon.type-title.ptm.prl
-              =partial 'images/svg-lib/close.svg'
-          .col
-            .type-title Dribbble
-            .type-lg.mbxxl Design bits and pixels. Out of date.
+        .type-lg.mbxxl I like to talk about spaceships, creativity, new ventures, and whether or not I can animate it with CSS (I probably can).
+        %a.card-link{:href => "https://twitter.com/elliotdahl", :target => "_blank"}
+          .grid.mbn.grid-nogutter
+            .col.col-fixed
+              .svgicon.type-title.ptm.prl
+                =partial 'images/svg-lib/close.svg'
+            .col
+              .type-title Twitter
+              .type-lg.mbxxl Occasially clever. Mostly pictures.
+        %a.card-link{:href => "https://instagram.com/elliotdahl", :target => "_blank"}
+          .grid.mbn.grid-nogutter
+            .col.col-fixed
+              .svgicon.type-title.ptm.prl
+                =partial 'images/svg-lib/close.svg'
+            .col
+              .type-title Instagram
+              .type-lg.mbxxl Dump of sketches and big ideas.
+        %a.card-link{:href => "https://www.linkedin.com/in/elliotdahl", :target => "_blank"}
+          .grid.mbn.grid-nogutter
+            .col.col-fixed
+              .svgicon.type-title.ptm.prl
+                =partial 'images/svg-lib/close.svg'
+            .col
+              .type-title Linkedin
+              .type-lg.mbxxl Because I'm professional.
+        %a.card-link{:href => "https://medium.com/@Elliotdahl", :target => "_blank"}
+          .grid.mbn.grid-nogutter
+            .col.col-fixed
+              .svgicon.type-title.ptm.prl
+                =partial 'images/svg-lib/close.svg'
+            .col
+              .type-title Medium
+              .type-lg.mbxxl I can read and write too.
+        -# %a.card-link{:href => "http://twitter.com/elliotdahl", :target => "_blank"}
+        -#   .grid.mbn.grid-nogutter
+        -#     .col.col-fixed
+        -#       .svgicon.type-title.ptm.prl
+        -#         =partial 'images/svg-lib/close.svg'
+        -#     .col
+        -#       .type-title Dribbble
+        -#       .type-lg.mbxxl Design bits and pixels. Probably out of date.
