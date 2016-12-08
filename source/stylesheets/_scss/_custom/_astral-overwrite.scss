@@ -18,7 +18,8 @@ button.btn-default-alt-wh:focus,
 input[type="submit"].btn-default-alt-wh:focus,
 input[type="reset"].btn-default-alt-wh:focus,
 input[type="button"].btn-default-alt-wh:focus {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: inherit;
+    //background-color: rgba(255, 255, 255, 0.1);
     color: $card-font-color;
     border-color: $card-font-color;
     outline: none;
