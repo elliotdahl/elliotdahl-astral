@@ -16,9 +16,10 @@
 $card-bg:#504d51;
 $card-font-color:#e5eadf;
 // $card-link-color:#ECC9C0;
-$card-link-color-hover:#EED3CC;
+// $card-link-color-hover:#EED3CC;
 
 $card-link-color:#ECC9DA;
+$card-link-color-hover:#ECC9DA;
 
 body {
   background: rgba(158,147,153,1);
@@ -53,7 +54,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e9399', end
 box-shadow: 10px 15px 30px 0px rgba(50, 19, 51, 0.25);
 
 }
-
+.card-ghost {
+  position: relative;
+  z-index: -1;
+  width: 375px;
+  height: 667px;
+  pointer-events: none;
+}
 .card-content {
     background-color: $card-bg;
     color: $card-font-color;
@@ -93,10 +100,13 @@ a.card-link {
   text-decoration: none;
 
   &:hover {
-    //color:white;
-
+    color:$card-link-color;
+    svg {
+      fill: $card-link-color;
+    }
     .type-title {
       position: relative;
+
       &:after {
         content:"";
         position: absolute;
@@ -104,7 +114,7 @@ a.card-link {
         left:-40px;
         height:56px;
         width:2px;
-        background-color:$card-font-color;
+        background-color:$card-link-color;
       }
     }
   }
@@ -135,7 +145,8 @@ box-shadow: 4px 4px 10px 0px rgba(50,19,51,0.25);
     }
 }
 .card-left-hidden {
-	opacity:0;
+  z-index: 0;
+  opacity:0;
 	right:0px;
 	width:100%;
 	box-shadow:none;
@@ -173,6 +184,7 @@ box-shadow: 4px 4px 10px 0px rgba(50,19,51,0.25);
     }
 }
 .card-right-hidden {
+  z-index: 0;
 	opacity:0;
 	left:0px;
 	width:100%;
