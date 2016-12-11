@@ -51,6 +51,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e9399', end
 // -moz-box-shadow: 4px 4px 10px 0px rgba(50,19,51,0.25);
 // box-shadow: 4px 4px 10px 0px rgba(50,19,51,0.25);
 box-shadow: 10px 15px 30px 0px rgba(50, 19, 51, 0.25);
+
 }
 
 .card-content {
@@ -147,16 +148,17 @@ box-shadow: 4px 4px 10px 0px rgba(50,19,51,0.25);
 }
 
 .card-right {
-	z-index:10;
+	  z-index:10;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 49.9%;
+    transform: translateY(-50.1%);
     left: calc(100% + 64px);
     width: 100%;
     // height:100%;
     transition: all .25s ease-out;
+
     &:after {
-    	transition: all .25s ease-out .25s;
+    	  transition: all .25s ease-out .25s;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -193,12 +195,12 @@ box-shadow: 4px 4px 10px 0px rgba(50,19,51,0.25);
 	position:absolute;
 	bottom:40px;
 	left: 50%;
-    transform: translateX(-50%);
+  transform: translateX(-50%);
 	//width:600px;
 	height:600px;
 }
 .intro-panel {
-    position: absolute;
+  position: absolute;
 	bottom:-247px;
 	transition: all .25s ease-out;
 	background-color: $card-bg;
