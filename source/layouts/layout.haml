@@ -4,11 +4,11 @@
     %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}
     %meta{:charset => "utf-8"}
     %meta{:content => "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no", :name => "viewport"}
-         
+
     %title= current_page.data.title || "Elliot Dahl"
 
     //Monoton, Shrikhand, Lato -- Only for fun
-    -# %link{:href => "//fonts.googleapis.com/css?family=Monoton|Shrikhand|Lato:300,400,600", :rel => "stylesheet", :type => "text/css"}
+    -# %link{:href => "//fonts.googleapis.com/css?family=Monoton|Shrikhand|Lato:300,400,700", :rel => "stylesheet", :type => "text/css"}
 
 
     //Lato
@@ -17,13 +17,13 @@
 
     //Source Sans Pro Font
     -# %link{:href => "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i", :rel => "stylesheet", :type => "text/css"}
-    
+
     //Raleway
     -# %link{:href => "https://fonts.googleapis.com/css?family=Raleway:400,600,700,800,900", :rel => "stylesheet"}
 
     -# //Font Awesome
     -# %link{:href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css", :rel => "stylesheet"}
-    
+
     -# //Google Material Font Icon
     -# -# %link{:href => "https://fonts.googleapis.com/icon?family=Material+Icons", :rel => "stylesheet", :type => "text/css"}
 
@@ -40,6 +40,6 @@
     =stylesheet_link_tag :"site"
     =javascript_include_tag :all
 
-    
+
   %body{:class => page_classes}
     = yield

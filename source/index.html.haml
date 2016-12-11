@@ -2,20 +2,20 @@
 title: Elliot Dahl
 ---
 //Add logo to top right corner of site.
-
+.rings
+  .core-rings
+    .ring-1
+      .ring-1-p1
+        =partial 'images/ring-1-p1-05.svg'
+      .ring-1-p2
+        =partial 'images/ring-1-p2-06.svg'
+      -# .ring-1-p3
+      -#   =partial 'images/ring-1-p3-07.svg'
+    .ring-2
+      .ring-2-p1
+        =partial 'images/ring-2-p1-05.svg'
 .page.full-vh
-  .rings
-    .core-rings
-      .ring-1
-        .ring-1-p1
-          =partial 'images/ring-1-p1-05.svg'
-        .ring-1-p2
-          =partial 'images/ring-1-p2-06.svg'
-        -# .ring-1-p3.hide
-        -#   =partial 'images/ring-1-p3-07.svg'
-      .ring-2
-        .ring-2-p1
-          =partial 'images/ring-2-p1-05.svg'
+
   .card-container
     .card.card-home
       .intro-container
@@ -109,7 +109,7 @@ title: Elliot Dahl
                 =partial 'images/svg-lib/logo_twitter.svg'
             .col
               .type-title Twitter
-              .type-md.mbxxl Occasially clever. Mostly pictures.
+              .type-md.mbxxl Occasionally clever. Mostly pictures.
         %a.card-link{:href => "https://instagram.com/elliotdahl", :target => "_blank"}
           .grid.mbn.grid-nogutter
             .col.col-fixed

@@ -25,7 +25,7 @@ $link-hover-decoration:                   underline !default;
 
 
 
-$font-family-sans-serif:  'Source Sans Pro', 'SourceSansPro', sans-serif !default;
+$font-family-sans-serif:  'Lato', sans-serif !default;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:   Menlo, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
@@ -192,11 +192,11 @@ $input-border-valid:$success-2;
 //Button Letter Spacing
 $btn-letter-spacing:1.5px;
 //Button Border Width
-$btn-border-width:2px;
+$btn-border-width:1px;
 //Button Radius
 $btn-radius:2px;
 //Button Font Weight
-$btn-font-weight:600;
+$btn-font-weight:400;
 
 //Button Colors
 //default
@@ -235,6 +235,3 @@ $box-shadow-key-3: 0px 8px 8px 0px rgba(36, 54, 65, 0.1);
 $box-shadow-amb-1: 0px 0px 2px 0px rgba(36, 54, 65, 0.1);
 $box-shadow-amb-2: 0px 0px 4px 1px rgba(36, 54, 65, 0.1);
 $box-shadow-amb-3: 0px 0px 8px 1px rgba(36, 54, 65, 0.1);
-
-
-

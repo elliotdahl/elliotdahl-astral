@@ -6,10 +6,10 @@ input[type="submit"].btn-default-alt-wh,
 input[type="reset"].btn-default-alt-wh,
 input[type="button"].btn-default-alt-wh {
     background-color: transparent;
-    color: $card-font-color;
-    border-color: $card-font-color;
+    color: $card-link-color;
+    border-color: $card-link-color;
     .svgicon {
-        fill: $card-font-color;
+        fill: $card-link-color;
     }
 }
 
@@ -20,11 +20,11 @@ input[type="reset"].btn-default-alt-wh:focus,
 input[type="button"].btn-default-alt-wh:focus {
     background-color: inherit;
     //background-color: rgba(255, 255, 255, 0.1);
-    color: $card-font-color;
-    border-color: $card-font-color;
+    color: $card-link-color;
+    border-color: $card-link-color;
     outline: none;
     .svgicon {
-        fill: $card-font-color;
+        fill: $card-link-color;
     }
 }
 
@@ -38,12 +38,12 @@ input[type="reset"].btn-default-alt-wh:hover,
 input[type="reset"].btn-default-alt-wh:focus:hover,
 input[type="button"].btn-default-alt-wh:hover,
 input[type="button"].btn-default-alt-wh:focus:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: $card-font-color;
-    border-color: $card-font-color;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: $card-link-color;
+    border-color: $card-link-color;
     outline: none;
     .svgicon {
-        fill: $card-font-color;
+        fill: $card-link-color;
     }
 }
 
@@ -57,10 +57,10 @@ input[type="button"].btn-default-alt-wh {
     .spinner-md,
     .spinner-sm {
         .ring {
-            stroke: $card-font-color;
+            stroke: $card-link-color;
         }
         .path {
-            stroke: $card-font-color;
+            stroke: $card-link-color;
         }
     }
 }
