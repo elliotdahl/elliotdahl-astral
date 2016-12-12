@@ -7,12 +7,13 @@
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    opacity: .5;
+    opacity: .4;
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0) scale(1.0, 1.0);
     transform: translateZ(0);
     svg {
-      fill:#AEB6A1;
+      fill:#7C787D;
+      // fill:red;
     }
 }
 
@@ -25,7 +26,7 @@
     height: 2px;
 }
 
-.ring-1 {
+.ring-1, .ring-2, .ring-3 {
     position: absolute;
     right: -630px;
     bottom: -600px;
@@ -55,29 +56,14 @@
     animation: ring-1-p2 20s infinite linear;
 }
 
-.ring-1-p3 {
-    -webkit-animation: ring-1-p3 10s infinite linear;
-    animation: ring-1-p3 20s infinite linear;
-}
-
-.ring-2 {
-    position: absolute;
-    right: -630px;
-    bottom: -600px;
-    width: 2000px;
-    height: 2000px;
-    div {
-        top: 0;
-        left: 0;
-        position: absolute;
-        height: 100%;
-        width: 100%;
-    }
-}
-
 .ring-2-p1 {
-    -webkit-animation: ring-1-p1 120s infinite linear;
-    animation: ring-1-p1 120s infinite linear;
+    -webkit-animation: ring-1-p1 160s infinite linear;
+    animation: ring-1-p1 160s infinite linear;
+}
+
+.ring-3-p1 {
+    -webkit-animation: ring-3-p1 80s infinite ease-in-out;
+    animation: ring-3-p1 80s infinite ease-in-out;
 }
 
 //Ring 1
@@ -133,29 +119,39 @@
     }
 }
 
-@-webkit-keyframes ring-1-p3 {
-    0% {
-        transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-    }
-    30% {
-        transform: rotate(-110deg);
-        -webkit-transform: rotate(-110deg);
-    }
-    100% {
-        transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-    }
+@-webkit-keyframes ring-3-p1 {
+  0% {
+      transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+  }
+  32% {
+      transform: rotate(72deg);
+      -webkit-transform: rotate(72deg);
+  }
+
+  40% {
+      transform: rotate(80deg);
+      -webkit-transform: rotate(80deg);
+  }
+  100% {
+      transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+  }
 }
 
-@keyframes ring-1-p3 {
+@keyframes ring-3-p1 {
     0% {
         transform: rotate(0deg);
         -webkit-transform: rotate(0deg);
     }
-    30% {
-        transform: rotate(-110deg);
-        -webkit-transform: rotate(-110deg);
+    32% {
+        transform: rotate(72deg);
+        -webkit-transform: rotate(72deg);
+    }
+
+    40% {
+        transform: rotate(80deg);
+        -webkit-transform: rotate(80deg);
     }
     100% {
         transform: rotate(0deg);
