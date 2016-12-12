@@ -11,6 +11,9 @@
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0) scale(1.0, 1.0);
     transform: translateZ(0);
+    svg {
+      fill:#AEB6A1;
+    }
 }
 
 .core-rings {
@@ -39,7 +42,7 @@
 
 .ring-1-p1 {
   -webkit-font-smoothing: subpixel-antialiased;
-    @extend .animate-3d;
+    //@extend .animate-3d;
     -webkit-animation: ring-1-p1 60s infinite linear;
     animation: ring-1-p1 60s infinite linear;
 

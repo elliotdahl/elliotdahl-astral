@@ -18,8 +18,13 @@ $card-font-color:#e5eadf;
 // $card-link-color:#ECC9C0;
 // $card-link-color-hover:#EED3CC;
 
-$card-link-color:#ECC9DA;
-$card-link-color-hover:#ECC9DA;
+// $card-link-color:#ECC9DA;
+// $card-link-color-hover:#ECC9DA;
+
+$card-link-color:#C79AC7;
+$card-link-color-hover:#C79AC7;
+
+
 
 body {
   background: rgba(158,147,153,1);
@@ -72,7 +77,15 @@ box-shadow: 10px 15px 30px 0px rgba(50, 19, 51, 0.25);
     	}
     }
 }
-
+.home-logo {
+  font-size:40px;
+  position: absolute;
+  top:8px;
+  right:8px;
+  svg {
+    fill:#B9B8AF;
+  }
+}
 .card-home {
 	z-index:20;
     position: relative;
