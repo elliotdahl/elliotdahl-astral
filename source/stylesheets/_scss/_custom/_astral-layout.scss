@@ -258,7 +258,18 @@ box-shadow: 4px 4px 10px 0px rgba(50,19,51,0.25);
 .hide {
     display: none;
 }
-
+.tag {
+  line-height: 24px;
+  font-size:12px;
+  background-color:#7d7d7d;
+  padding:0 8px;
+  margin-left: 8px;
+  width:100%;
+  border-radius: 12px;
+  color:#504d51;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 h1,
 h2 {
     font-weight: 300;
