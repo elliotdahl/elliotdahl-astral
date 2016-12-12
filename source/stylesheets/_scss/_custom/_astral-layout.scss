@@ -174,8 +174,8 @@ box-shadow: 4px 4px 10px 0px rgba(50,19,51,0.25);
 .card-right {
 	  z-index:10;
     position: absolute;
-    top: 49.9%;
-    transform: translateY(-50.1%);
+    top: 50%;
+    transform: translateY(-50%);
     left: calc(100% + 64px);
     width: 100%;
     // height:100%;
