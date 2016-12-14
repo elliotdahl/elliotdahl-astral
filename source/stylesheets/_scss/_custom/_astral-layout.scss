@@ -35,9 +35,10 @@ background: -o-linear-gradient(-45deg, rgba(158,147,153,1) 0%, rgba(202,206,190,
 background: -ms-linear-gradient(-45deg, rgba(158,147,153,1) 0%, rgba(202,206,190,1) 49%, rgba(181,177,172,1) 100%);
 background: linear-gradient(135deg, rgba(158,147,153,1) 0%, rgba(202,206,190,1) 49%, rgba(181,177,172,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e9399', endColorstr='#b5b1ac', GradientType=1 );
+
 }
 .page {
-    min-width: 1287px;
+    //min-width: 1287px;
     font-weight: 300;
 
 }
