@@ -23,7 +23,7 @@ title: Elliot Dahl
       .intro-container
         .home-logo
           .svgicon
-            =partial 'images/svg-lib/logo_elliot.svg'
+            =partial 'images/custom-svg-lib/logo_elliot.svg'
         .intro-bg-img
           %img{:src => "images/selp-placehold.png"}
           -# %img{:src => "images/placeholder.png"}
@@ -38,11 +38,12 @@ title: Elliot Dahl
 
           .type-md.mbl
             I’m a designer who dreams in
-            %a{:href => "https://github.com/elliotdahl", :target => "_blank"} front-end code
-            , writes about
-            %a{:href => "https://medium.com/@Elliotdahl", :target => "_blank"} design systems
-            , and talks about full stack UX. Designing developer experiences at
-            %a{:href => "http://pivotal.io", :target => "_blank"} Pivotal Cloud Foundry.
+            = link_to("front-end code", "https://github.com/elliotdahl", target: '_blank') + ","
+            writes about
+            = link_to("design systems", "https://medium.com/@Elliotdahl", target: '_blank') + ","
+            and talks about full stack UX. Designing developer experiences at
+            = link_to("Pivotal Cloud Foundry", "http://pivotal.io", target: '_blank') + "."
+
           .type-md.mbxxl I spend the rest of my time drawing spaceships, backpacking, and reading science fiction.
           .grid
             .col.txt-c
@@ -61,25 +62,33 @@ title: Elliot Dahl
           .grid.mbn.grid-nogutter
             .col.col-fixed
               .svgicon.svg-title.prl
-                =partial 'images/svg-lib/icon_kessel.svg'
+                =partial 'images/custom-svg-lib/icon_kessel.svg'
             .col
               .type-title Kessel Run
               .type-md.mbxxl In less than 12 parsecs? Doubtful.
-        %a.card-link
+        %a.card-link{:href => "http://americathisis.us", :target => "_blank"}
           .grid.mbn.grid-nogutter
             .col.col-fixed
               .svgicon.svg-title.prl
-                =partial 'images/svg-lib/icon_solar.svg'
+                =partial 'images/custom-svg-lib/icon_america.svg'
             .col
-              .type-title
-                Solar System
-                %span.tag Coming Soon
-              .type-md.mbxxl A css modeling of our planets.
+              .type-title America This Is Us
+              .type-md.mbxxl A reminder of what it means to be an American.
+        -# %a.card-link
+        -#   .grid.mbn.grid-nogutter
+        -#     .col.col-fixed
+        -#       .svgicon.svg-title.prl
+        -#         =partial 'images/custom-svg-lib/icon_solar.svg'
+        -#     .col
+        -#       .type-title
+        -#         Solar System
+        -#         %span.tag Coming Soon
+        -#       .type-md.mbxxl A css modeling of our planets.
         %a.card-link
           .grid.mbn.grid-nogutter
             .col.col-fixed
               .svgicon.svg-title.prl
-                =partial 'images/svg-lib/icon_8gauge.svg'
+                =partial 'images/custom-svg-lib/icon_8gauge.svg'
             .col
               .type-title
                 8 Gauge
@@ -89,7 +98,7 @@ title: Elliot Dahl
           .grid.mbn.grid-nogutter
             .col.col-fixed
               .svgicon.svg-title.prl
-                =partial 'images/svg-lib/icon_webweaver.svg'
+                =partial 'images/custom-svg-lib/icon_webweaver.svg'
             .col
               .type-title
                 Web Weaver
@@ -99,7 +108,7 @@ title: Elliot Dahl
           .grid.mbn.grid-nogutter
             .col.col-fixed
               .svgicon.svg-title.prl
-                =partial 'images/svg-lib/icon_foldspace.svg'
+                =partial 'images/custom-svg-lib/icon_foldspace.svg'
             .col
               .type-title Foldspace
               .type-md.mbl 3D printed jewelry.
@@ -120,7 +129,7 @@ title: Elliot Dahl
           .grid.mbn.grid-nogutter
             .col.col-fixed
               .svgicon.svg-title.prl
-                =partial 'images/svg-lib/logo_twitter.svg'
+                =partial 'images/custom-svg-lib/logo_twitter.svg'
             .col
               .type-title Twitter
               .type-md.mbxxl Occasionally clever. Mostly pictures.
@@ -128,7 +137,7 @@ title: Elliot Dahl
           .grid.mbn.grid-nogutter
             .col.col-fixed
               .svgicon.svg-title.prl
-                =partial 'images/svg-lib/logo_instagram.svg'
+                =partial 'images/custom-svg-lib/logo_instagram.svg'
             .col
               .type-title Instagram
               .type-md.mbxxl Dump of sketches and big ideas.
@@ -136,7 +145,7 @@ title: Elliot Dahl
           .grid.mbn.grid-nogutter
             .col.col-fixed
               .svgicon.svg-title.prl
-                =partial 'images/svg-lib/logo_linkedin.svg'
+                =partial 'images/custom-svg-lib/logo_linkedin.svg'
             .col
               .type-title Linkedin
               .type-md.mbxxl Because I'm professional.
@@ -144,7 +153,7 @@ title: Elliot Dahl
           .grid.mbn.grid-nogutter
             .col.col-fixed
               .svgicon.svg-title.prl
-                =partial 'images/svg-lib/logo_medium.svg'
+                =partial 'images/custom-svg-lib/logo_medium.svg'
             .col
               .type-title Medium
               .type-md.mbl I can read and write too.
@@ -152,7 +161,7 @@ title: Elliot Dahl
         -#   .grid.mbn.grid-nogutter
         -#     .col.col-fixed
         -#       .svgicon.svg-title.prl
-        -#         =partial 'images/svg-lib/logo_dribble.svg'
+        -#         =partial 'images/custom-svg-lib/logo_dribble.svg'
         -#     .col
         -#       .type-title Dribbble
         -#       .type-md.mbl Design bits and pixels. Probably out of date.
