@@ -1,0 +1,29 @@
+.portfolio {
+  .page {
+    // width:960px;
+    // font-size:16px;
+    // line-height: 24px;
+  }
+  p {
+    font-size:18px;
+    line-height: 28px;
+  }
+  ul {
+    font-size: 18px;
+    margin: 8px 0 16px -24px;
+  }
+  section.sm-col {
+    max-width:736px;
+    margin-left: auto;
+    margin-right:auto;
+  }
+  section.md-col {
+    max-width:992px;
+    margin-left: auto;
+    margin-right:auto;
+  }
+}
+
+.img-width {
+  width:100%;
+}

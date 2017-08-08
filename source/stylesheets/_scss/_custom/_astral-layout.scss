@@ -26,7 +26,7 @@ $card-link-color-hover:#C79AC7;
 
 
 
-body {
+body.index {
   background: rgba(158,147,153,1);
 background: -moz-linear-gradient(-45deg, rgba(158,147,153,1) 0%, rgba(202,206,190,1) 49%, rgba(181,177,172,1) 100%);
 background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(158,147,153,1)), color-stop(49%, rgba(202,206,190,1)), color-stop(100%, rgba(181,177,172,1)));
@@ -37,7 +37,7 @@ background: linear-gradient(135deg, rgba(158,147,153,1) 0%, rgba(202,206,190,1) 
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e9399', endColorstr='#b5b1ac', GradientType=1 );
 
 }
-.page {
+.index .page {
     //min-width: 1287px;
     font-weight: 300;
 
