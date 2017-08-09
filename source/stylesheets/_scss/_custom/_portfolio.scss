@@ -1,17 +1,16 @@
+$dark-blue-1:#1B2B44;
+
 .portfolio {
+  background-color: #F2F5F7;
+
+
   .page {
     // width:960px;
     // font-size:16px;
     // line-height: 24px;
+
   }
-  p {
-    font-size:18px;
-    line-height: 28px;
-  }
-  ul {
-    font-size: 18px;
-    margin: 8px 0 16px -24px;
-  }
+
   section.sm-col {
     max-width:736px;
     margin-left: auto;
@@ -22,6 +21,40 @@
     margin-left: auto;
     margin-right:auto;
   }
+  //Page Layout
+  .page-frame {
+    position: fixed;
+    top:0;
+    border:solid 32px $dark-blue-1;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    z-index: -1;
+  }
+  .content-area {
+    position: relative;
+    max-width:736px;
+    background-color: white;
+    padding:48px;
+    margin-top:288px;
+    margin-bottom: 120px;
+    margin-left:15%;
+    height: 4000px;
+  }
+  .welcome {
+    position: absolute;
+    top:-168px;
+    h1 {
+      font-size:72px;
+      line-height: 96px;
+    }
+    i {
+      font-size: 48px;
+      line-height: 56px;
+
+    }
+  }
+
 }
 
 .img-width {

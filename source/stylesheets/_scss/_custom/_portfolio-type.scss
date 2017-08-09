@@ -1,0 +1,18 @@
+body.portfolio {
+  color:$dark-blue-1;
+}
+
+.portfolio {
+  .shirkhand {
+    font-family: 'Shrikhand', cursive;
+  }
+
+  p {
+    font-size:18px;
+    line-height: 28px;
+  }
+  ul {
+    font-size: 18px;
+    margin: 8px 0 16px -24px;
+  }
+}
