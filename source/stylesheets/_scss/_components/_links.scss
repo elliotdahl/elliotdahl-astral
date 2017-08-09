@@ -4,19 +4,63 @@
 a {
     color: $link-color;
     text-decoration: none;
+    // -webkit-transition: color 150ms ease-out;
+    // transition: color 150ms ease-out;
+    svg {
+      fill: $link-color;
+    }
 }
 
 a:hover {
     color: $link-hover-color;
 }
 
+
+///////////////////////////
+//Underlines
+//////////////////////////
 .no-underline {
-    text-decoration: none;
+    text-decoration: none !important;
+    background-image:none !important;
 }
+//Basic Text Decoration Underline
 .underline {
-    text-decoration:underline;
+  text-decoration: underline;
+}
+.underline-hover:hover {
+  text-decoration: underline;
+}
+//Underline Variables
+$u-top:85%;
+$u-btm:91%;
+$underline-clear:rgba(0, 0, 0, 0);
+$underline-blue:$link-hover-color;
+$underline-gray:$dark-7;
+
+$underline:linear-gradient(rgba(0, 0, 0, 0) $u-top, $underline-blue $u-top, $underline-blue $u-btm,rgba(0, 0, 0, 0) $u-btm);
+$underline-gray:linear-gradient(rgba(0, 0, 0, 0) $u-top, $underline-gray $u-top, $underline-gray $u-btm,rgba(0, 0, 0, 0) $u-btm);
+
+//Underline Blue (Default)
+.underline-blue {
+  background-image: $underline;
+}
+.underline-blue-hover:hover {
+  background-image: $underline !important;
 }
 
-.hover-underline:hover {
-	text-decoration:underline;
+//Underline Gray
+.underline-gray {
+  background-image: $underline-gray;
 }
+.underline-gray-hover:hover {
+  background-image: $underline-gray !important;
+}
+
+
+
+
+////////Experimental/////////
+// $u-one:94%;
+// .underline-2 {
+//   background-image: linear-gradient(rgba(0, 0, 0, 0) $u-one, $link-color $u-one);
+// }

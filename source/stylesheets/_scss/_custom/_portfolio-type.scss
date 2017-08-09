@@ -2,6 +2,7 @@ body.portfolio {
   color:$dark-blue-1;
 }
 
+
 .portfolio {
   .shirkhand {
     font-family: 'Shrikhand', cursive;
@@ -11,8 +12,15 @@ body.portfolio {
     font-size:18px;
     line-height: 28px;
   }
-  ul {
+  .content-area ul {
     font-size: 18px;
     margin: 8px 0 16px -24px;
+  }
+  a {
+    color:$p-link;
+    &:hover {
+      color:$p-link;
+      background-image: linear-gradient(rgba(0, 0, 0, 0) 70%, $p-link-hover 70%, $p-link-hover 99%,rgba(0, 0, 0, 0) 99%)
+    }
   }
 }

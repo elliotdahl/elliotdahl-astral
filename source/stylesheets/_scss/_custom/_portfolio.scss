@@ -1,26 +1,24 @@
-$dark-blue-1:#1B2B44;
+
 
 .portfolio {
-  background-color: #F2F5F7;
-
+  // background-color: #FAFCFF;
+  background: rgba(220,231,245,1);
+  background: -moz-linear-gradient(left, rgba(220,231,245,1) 0%, rgba(220,231,245,1) 33%, rgba(250,252,255,1) 33%, rgba(250,252,255,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(220,231,245,1)), color-stop(33%, rgba(220,231,245,1)), color-stop(33%, rgba(250,252,255,1)), color-stop(100%, rgba(250,252,255,1)));
+  background: -webkit-linear-gradient(left, rgba(220,231,245,1) 0%, rgba(220,231,245,1) 33%, rgba(250,252,255,1) 33%, rgba(250,252,255,1) 100%);
+  background: -o-linear-gradient(left, rgba(220,231,245,1) 0%, rgba(220,231,245,1) 33%, rgba(250,252,255,1) 33%, rgba(250,252,255,1) 100%);
+  background: -ms-linear-gradient(left, rgba(220,231,245,1) 0%, rgba(220,231,245,1) 33%, rgba(250,252,255,1) 33%, rgba(250,252,255,1) 100%);
+  background: linear-gradient(to right, rgba(220,231,245,1) 0%, rgba(220,231,245,1) 33%, rgba(250,252,255,1) 33%, rgba(250,252,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dce7f5', endColorstr='#fafcff', GradientType=1 );
 
   .page {
     // width:960px;
-    // font-size:16px;
-    // line-height: 24px;
+    font-size:16px;
+    line-height: 24px;
 
   }
 
-  section.sm-col {
-    max-width:736px;
-    margin-left: auto;
-    margin-right:auto;
-  }
-  section.md-col {
-    max-width:992px;
-    margin-left: auto;
-    margin-right:auto;
-  }
+
   //Page Layout
   .page-frame {
     position: fixed;
@@ -31,15 +29,73 @@ $dark-blue-1:#1B2B44;
     overflow: hidden;
     z-index: -1;
   }
-  .content-area {
-    position: relative;
+  .nav-wrapper {
+    z-index: 1;
+    position: fixed;
+    top:288px;
+    left:56px;
+    font-size: 14px;
+    line-height: 24px;
+    li {
+      margin-bottom: 0;
+      position: relative;
+      &:after {
+        content:"";
+        position: absolute;
+        left:-12px;
+        top:12px;
+        width:8px;
+        height:2px;
+        background-color: $dark-blue-1;
+      }
+    }
+    .nav-title {
+      font-size:12px;
+      color:#8497B8;
+    }
+    a {
+      color:$dark-blue-1;
+      &:hover {
+        cursor: pointer;
+        color:$dark-blue-1;
+        background-image: linear-gradient(rgba(0, 0, 0, 0) 70%, $p-link-hover 70%, $p-link-hover 99%,rgba(0, 0, 0, 0) 99%)
+      }
+    }
+  }
+  section.content {
+    margin-left:15%;
+    padding:48px;
     max-width:736px;
     background-color: white;
-    padding:48px;
+    -webkit-box-shadow: 16px 8px 24px 0px rgba(0,0,0,0.05);
+    -moz-box-shadow: 16px 8px 24px 0px rgba(0,0,0,0.05);
+    box-shadow: 16px 8px 24px 0px rgba(0,0,0,0.05);
+  }
+  section.section-head {
+    z-index: 100;
+    color:$dark-blue-light;
+    background-color: $dark-blue-1;
+    position: relative;
+    padding:56px 0;
+    .section-head-content {
+      margin-left:15%;
+      padding-left:48px;
+    }
+    .shirkhand {
+      font-size: 72px;
+      line-height: 56px;
+    }
+    i {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+  .content-area {
+    position: relative;
     margin-top:288px;
     margin-bottom: 120px;
-    margin-left:15%;
-    height: 4000px;
+    pointer-events: none;
+
   }
   .welcome {
     position: absolute;
@@ -54,7 +110,10 @@ $dark-blue-1:#1B2B44;
 
     }
   }
-
+  .draw-box {
+    border:solid gold 1px;
+    height: calc(100vh - 528px);
+  }
 }
 
 .img-width {
