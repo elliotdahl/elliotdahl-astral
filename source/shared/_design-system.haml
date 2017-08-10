@@ -77,6 +77,8 @@
 
   %h2 Icon System
   %p We were growing tired of the Fontawesome icons and wanted to start working towards building our own icon set. Fontawesome is a great product and I highly recommend it for getting a project started quickly but we needed a more professional look that aligned with our brand aesthetic. We were debating doing direct SVGs for quality and accessibility reasons or a font icon for ease of use. Again I dug deep and utilized the collective knowledge of the internet to come to a solution that works great for us. We decided to use React to build out a simple component that can will generate an SVG based on its matching name in a folder. We also built this into a number of other components like buttons so they can use the same system. One of the major drawbacks to SVG icons vs. font icons is that SVGs are treated like normal elements inside of text so they automatically align to the baseline of the text they are based to. If we have a padding based into the SVGs this suddenly gets annoying because you have to custom place every single SVG you set next to a text element. I wrote an article about my solution to this problem here. By using a consistent wrangling class and applying a modifier class we are able to pull the icon down when using the `.icon-baseline` modifier to align perfectly with the text. This gives us the beautiful easy use of an icon font with the quality and accessibility of SVGs.
+  .img-wrap
+    %img.img-handler{:src => "images/portfolio/svg-icons.png"}
   %p.mbn You can read all about my approach in my Medium post:
   .default-type.mbxl
     %a{:href => "https://blog.prototypr.io/align-svg-icons-to-text-and-say-goodbye-to-font-icons-d44b3d7b26b4", :target => "_blank"}
@@ -86,7 +88,7 @@
       .svgicon.svg-baseline
         =partial 'images/svg-lib/open_in_new.svg'
   %h2 New Style Guide
-  %p Contribution is a major component for Pivotal UI’s continued growth. We recently launched a new style guide which was a collaboration of multiple designers and the PUI team. Still a work in progress but the inpage React and HTML editable examples are great for experimentation.
+  %p Contribution is a major component for Pivotal UI’s continued growth. We recently launched a new style guide which was a collaboration of multiple designers and the PUI team. Still a work in progress but the in page React and HTML editable examples are great for experimentation.
   .default-type.mbl
     %a{:href => "https://styleguide.pivotal.io", :target => "_blank"}
       .svgicon.svg-baseline
