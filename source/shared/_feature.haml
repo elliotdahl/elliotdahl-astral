@@ -5,22 +5,23 @@
     .subtitle 3 weeks • Product Designer
 %section.content
   %h2 Background
-  %p Cloud Foundry is a platform that promotes cloud native 12 factor applications that fit into a microservices architecture. Services are a key part of the microservices architecture and provisioning a new service is a common action. A service can for example be a database of customer information, an application auto-scaler, or an email delivery client.
+  %p Cloud Foundry is a platform that promotes cloud native 12 factor applications that fit into a microservices architecture. Services are a part of the microservices architecture and provisioning (creating) a new service is a common action. A service supports your application and can, for example, be a database of customer information, an application auto-scaler, or an email delivery client.
+  .img-wrap
+    %img.img-handler{:src => "images/portfolio/microservices-architecture.png"}
+    .img-subtitle Reference from Pivotal.io
+  %p Essentially as a developer (user) I have an application running on the platform and I need a database so I can store my customer's information. Adding an object with a relationship to the object I already have.
+  %p Still with me?
   %h2 The Problem
   %p In my research developers indicated a lot of confusion around the service provision flow.
   %ul
     %Li Where is my service being provisioned?
     %Li How do I know what the configuration is?
     %li Why is this flow so long?
-  %h2 Problem Framing
-  %p It’s clear that the flow for service provisioning is long. Counting clicks and writing out the actions on stickies makes this abundantly clear.
-  .img-wrap
-    .default-type [Stickies picture]
-    .img-subtitle Are all of these steps necessary?
+
   %h2 Scenario writing
   %p There are three ways a developer might provision a service. In the context of an app, from a space, or directly from the marketplace and then placed into a space and bound to an app. Writing scenarios for each of these flows was a great way to flesh out the flow and have a conversation about constraints and expectations without getting caught up on visuals.
   %p.mbn Scenario Format:
-  %ul
+  %ul.mbxxl
     %li
       %i Need
     %li
@@ -32,11 +33,12 @@
     %li
       %i Repeat until goal achieved
   .img-wrap
-    %img.img-handler{:src => "images/portfolio/user-scenario.png"}
+    %img.img-handler{:src => "images/portfolio/scenario-whiteboard.jpg"}
+    .img-subtitle Whiteboard picture from our scenario team exercise
   %h2 Sketching / Wireframing
-  %p Having a shared understanding of the 3 scenarios clearly laid out it was time to go wide with some different visuals for what this could look like. I started with sketching on post it notes and using them to frame up a basic storyboard. This helped me to visually see which flow could cut down on steps and constrain my visuals.
+  %p Having a shared understanding of the 3 scenarios clearly laid out it was time to go wide with some different visuals for what this could look like. I started with sketching on post-it notes and using them to frame up a basic storyboard. This helped me to visually see which flow could cut down on steps and constrain my visuals.
   %p [post it sketches]
-  %p Next I took the sketching over to my iPad using the Concepts app to quickly iterate through a chosen visual flow. This is what I'll walk through with my PM and lead engineer.
+  %p Next I sketched on my iPad using the Concepts app to quickly iterate through a chosen visual flow. This is what I'll walk through with my PM and lead engineer.
   .img-wrap
     %img.img-handler{:src => "images/portfolio/sketch-feature.png"}
   %h2 Visuals
@@ -58,7 +60,7 @@
   %h2 Prototype
   %p The flow was starting to come together visually but I was still nervous about the interaction feeling awkward. I jumped into an HTML mock-up with just enough jQuery to fake the touch points. Click on the link below and navigate to the “Services” tab and start the “Add A Service” flow. Please note that this is not a full app prototype and there are many rough edges if you start to stray.
   .default-type.mbxl
-    %a{:href => "http://protoappsman8pt.cfapps.io/"}
+    %a{:href => "http://protoappsman8pt.cfapps.io/app.html", :target => "_blank"}
       .svgicon.svg-baseline
         =partial 'images/svg-lib/chevron_right.svg'
       Service Provision Prototype
@@ -66,7 +68,10 @@
         =partial 'images/svg-lib/open_in_new.svg'
   %p This worked great for aligning on the engineering, product, and design of this feature. Usability testing an HTML mock-up helps to drive out all of the quirky little edge cases that you would never catch working in Sketch. I was reminded to watch for long lists of content and wide lines of text. Feeling the animations and interacting with the content helps to drive out quality feedback from usability sessions.
   %h2 Ship It
-  %p My engineers now have an InVision prototype and an HTML prototype to build from. I don't usually bother with redlining because the PUI framework is opinionated about spacing and contains a number of reusable patterns. At most I'll call out a few components and colors but the engineers can usually get the design 90% of the way there and I'll come in at the end to give feedback for the final 10%.
+  %p
+    My engineers now have an InVision prototype and an HTML prototype to build from. I don't usually bother with redlining because the
+    %a{:href => "#design-system"} PUI design system
+    is opinionated about spacing and contains a number of reusable patterns. At most I'll call out a few components and colors but the engineers can usually get the design 90% of the way there and I'll come in at the end to give feedback for the final 10%.
   %h2 Measure
   %p
     This feature is currently in the final stages of being shipped. Once pushed to production on

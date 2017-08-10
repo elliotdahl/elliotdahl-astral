@@ -59,17 +59,17 @@
   %h2 Improved Loading States
   %p PUI didn't have an opinion about the passing of time up to this point. In my research I developed this concept that the passing of time is harder for your brain to recognize when the movement of a spinner is more dynamic. We enjoy picking out patterns everywhere we look but if the pattern is a little more dynamic than a simple circle rotation it makes us sit and watch to see what will happen next. It tricks our brain into waiting and it’s able to shorten the perceived load time. Keep in mind the size of the element being loaded and the estimated wait time play a big role in deciding how to animate a loading state. From a framework standpoint I wanted to lay down an opinion about the animation based on element size. You can see the smaller the spinner the more dramatic and rapid the movement. The large spinner is used for page loads, medium is used for a panel or zone on a page, the small one is used for small elements like buttons.
   .grid.mvxl
-    .col.txt-c
+    .col.txt-c.col-sm
       .mbxl
         %code .spinner-lg
       .icon.spinner-lg{:style => "font-size:96px;"}
         =partial 'images/loading/spinner.svg'
-    .col.txt-c
+    .col.txt-c.col-sm
       .mbxl
         %code .spinner-md
       .icon.spinner-md{:style => "font-size:48px;"}
         =partial 'images/loading/spinner.svg'
-    .col.txt-c
+    .col.txt-c.col-sm
       .mbxl
         %code .spinner-sm
       .icon.spinner-sm{:style => "font-size:16px;"}
