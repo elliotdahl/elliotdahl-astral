@@ -1,16 +1,28 @@
 
 
 .portfolio {
-  // background-color: #FAFCFF;
-  background: rgba(220,231,245,1);
-  background: -moz-linear-gradient(left, rgba(220,231,245,1) 0%, rgba(220,231,245,1) 33%, rgba(250,252,255,1) 33%, rgba(250,252,255,1) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(220,231,245,1)), color-stop(33%, rgba(220,231,245,1)), color-stop(33%, rgba(250,252,255,1)), color-stop(100%, rgba(250,252,255,1)));
-  background: -webkit-linear-gradient(left, rgba(220,231,245,1) 0%, rgba(220,231,245,1) 33%, rgba(250,252,255,1) 33%, rgba(250,252,255,1) 100%);
-  background: -o-linear-gradient(left, rgba(220,231,245,1) 0%, rgba(220,231,245,1) 33%, rgba(250,252,255,1) 33%, rgba(250,252,255,1) 100%);
-  background: -ms-linear-gradient(left, rgba(220,231,245,1) 0%, rgba(220,231,245,1) 33%, rgba(250,252,255,1) 33%, rgba(250,252,255,1) 100%);
-  background: linear-gradient(to right, rgba(220,231,245,1) 0%, rgba(220,231,245,1) 33%, rgba(250,252,255,1) 33%, rgba(250,252,255,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dce7f5', endColorstr='#fafcff', GradientType=1 );
+  background-color: #FAFCFF;
+  // background: rgba(220,231,245,1);
+  // background: -moz-linear-gradient(left, rgba(220,231,245,1) 0%, rgba(220,231,245,1) 33%, rgba(250,252,255,1) 33%, rgba(250,252,255,1) 100%);
+  // background: -webkit-gradient(left top, right top, color-stop(0%, rgba(220,231,245,1)), color-stop(33%, rgba(220,231,245,1)), color-stop(33%, rgba(250,252,255,1)), color-stop(100%, rgba(250,252,255,1)));
+  // background: -webkit-linear-gradient(left, rgba(220,231,245,1) 0%, rgba(220,231,245,1) 33%, rgba(250,252,255,1) 33%, rgba(250,252,255,1) 100%);
+  // background: -o-linear-gradient(left, rgba(220,231,245,1) 0%, rgba(220,231,245,1) 33%, rgba(250,252,255,1) 33%, rgba(250,252,255,1) 100%);
+  // background: -ms-linear-gradient(left, rgba(220,231,245,1) 0%, rgba(220,231,245,1) 33%, rgba(250,252,255,1) 33%, rgba(250,252,255,1) 100%);
+  // background: linear-gradient(to right, rgba(220,231,245,1) 0%, rgba(220,231,245,1) 33%, rgba(250,252,255,1) 33%, rgba(250,252,255,1) 100%);
+  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dce7f5', endColorstr='#fafcff', GradientType=1 );
+  &:after {
+    content: "";
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    width: 33vw;
+    height: 100%;
+    background-color: #DCE7F5;
+    background-image: url(../images/giggle-background.png);
+    background-size: 240px 480px;
+    background-repeat: repeat;
 
+  }
   .page {
     // width:960px;
     // font-size:16px;
@@ -27,7 +39,7 @@
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    z-index: -1;
+
   }
   .nav-wrapper {
     z-index: 1;
@@ -94,7 +106,7 @@
     position: relative;
     margin-top:288px;
     margin-bottom: 120px;
-    pointer-events: none;
+    // pointer-events: none;
 
   }
   .welcome {
