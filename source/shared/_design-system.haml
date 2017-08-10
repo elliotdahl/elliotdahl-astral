@@ -2,11 +2,101 @@
   .section-head-content
     %h2.shirkhand Design System
     %i Pivotal UI
-    .subtitle 2 years • Product Designer / Product Manager / Front-end Engineer
+    .subtitle 2 years • Product Designer / Product Manager / Front-End Engineer
 %section.content
-  %p Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis.
-  %p Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum.
+  %h2 History
+  %p
+    Before my time the team was based on a bootstrap fork and was driven out by a single product. Soon after PUI became known as the starting point of
+    %a{:href => "https://github.com/stubbornella/oocss/wiki", :target => "_blank"} Nicole Sullivan's Object Oriented CSS concept
+    and one of the first React based frameworks. Multiple UI teams within Pivotal began to build and contribute to it. I joined Pivotal as a designer in one of the key contributing product teams in 2015. At the end of 2016 I began part time PMing the team to drive out some big changes.
+  .default-type.mbl
+    %a{:href => "https://styleguide.pivotal.io", :target => "_blank"}
+      .svgicon.svg-baseline
+        =partial 'images/svg-lib/chevron_right.svg'
+      View the Pivotal UI Style Guide
+      .svgicon.svg-baseline
+        =partial 'images/svg-lib/open_in_new.svg'
+  %h2 Role
+  %p I've played designer, PM, and front-end engineer on the team at different points. Most recently leading the design and product direction for PUI. All major decisions are made by a balanced team (PM, Design, Engineer) with key contributors and consumers often weighing in.
+  %h2 Vision Statement
+  %p Empower designers and developers to efficiently build consistent UIs and provide high quality UX to PCF customers.
 
-  %p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus.
+  %h2 Transition to the 8pt grid
+  %p PUI's spatial system thinking was one of the first areas I wanted to dig into. Being based on Bootstrap the framework had no strong opinions about sizing and spacing. It's pretty difficult to create new components and update old ones without a consistent spacing method. We experienced this as teams were starting to grow further apart and approaching their design from different perspectives. The 8pt grid gave us a consistent system for deciding how to build new components and align old ones. This was an extensive CSS change digging deep into the roots of the framework. Ideally this would be the first thing a framework would decide on but we needed to retroactively go through every component and bring it up to speed. The outcome was that suddenly our form elements clicked together, white-spacing content was easier, intricate components played nicely with the elements around them, and all of this added up to greater consistency across our products.
+  .img-wrap
+    %img.img-handler{:src => "images/portfolio/8-pt-hero.png"}
+  %p To better explain this direction to the company I started writing a series of blog posts that garnered a good amount of attention from the design community. I still have so much to write about all of my learnings. Here are two published posts:
+  .default-type.mbl
+    %a{:href => "https://builttoadapt.io/intro-to-the-8-point-grid-system-d2573cde8632", :target => "_blank"}
+      .svgicon.svg-baseline
+        =partial 'images/svg-lib/chevron_right.svg'
+      Intro to The 8-Point Grid System
+      .svgicon.svg-baseline
+        =partial 'images/svg-lib/open_in_new.svg'
+  .default-type.mbxl
+    %a{:href => "https://builttoadapt.io/8-point-grid-borders-and-layouts-e91eb97f5091", :target => "_blank"}
+      .svgicon.svg-baseline
+        =partial 'images/svg-lib/chevron_right.svg'
+      8-Point Grid: Borders and Layouts
+      .svgicon.svg-baseline
+        =partial 'images/svg-lib/open_in_new.svg'
 
-  %p Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit libero, a pharetra augue. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+  %h2 Flex Grid
+  %p
+    Our teams were starting to use flexbox more in our page and content layouts but we were running into issues with conflicting styles and inconsistent approaches. This was the perfect place for a framework to come in and lay down some opinions. I came up with the flex grid concept after pouring over other major column grid layouts and comparing them to our layout needs. I wanted to give the developers the power of flexbox without all the complexity. This new column grid also needed to be able to live alongside the classic bootstrap column grid without conflict. I took a functional approach to the CSS and writing a column system that gives you exactly what you ask for with no surprises. Driven out by the needs of our products the Flex Grid has become the solution for almost every layout question. When used consistently it can be stacked and nested without any unforeseen consequences. We’ve been able to root out and remove all of the old monkey patched flexbox CSS in
+    %a{:href => "#product"} Apps Manager
+    simplifying the codebase.
+  .img-wrap
+    %img.img-handler{:src => "images/portfolio/flex-grid-example.png"}
+  %p I open sourced and made a mini-site for the code that I wrote. Still working on a blog post and wider share out.
+  .default-type.mbxl
+    %a{:href => "http://flexgridlite.elliotdahl.com/", :target => "_blank"}
+      .svgicon.svg-baseline
+        =partial 'images/svg-lib/chevron_right.svg'
+      Flex Grid Lite
+      .svgicon.svg-baseline
+        =partial 'images/svg-lib/open_in_new.svg'
+  %h2 Improved Loading States
+  %p PUI didn't have an opinion about the passing of time up to this point. In my research I developed this concept that the passing of time is harder for your brain to recognize when the movement of a spinner is more dynamic. We enjoy picking out patterns everywhere we look but if the pattern is a little more dynamic than a simple circle rotation it makes us sit and watch to see what will happen next. It tricks our brain into waiting and it’s able to shorten the perceived load time. Keep in mind the size of the element being loaded and the estimated wait time play a big role in deciding how to animate a loading state. From a framework standpoint I wanted to lay down an opinion about the animation based on element size. You can see the smaller the spinner the more dramatic and rapid the movement. The large spinner is used for page loads, medium is used for a panel or zone on a page, the small one is used for small elements like buttons.
+  .grid.mvxl
+    .col.txt-c
+      .mbxl
+        %code .spinner-lg
+      .icon.spinner-lg{:style => "font-size:96px;"}
+        =partial 'images/loading/spinner.svg'
+    .col.txt-c
+      .mbxl
+        %code .spinner-md
+      .icon.spinner-md{:style => "font-size:48px;"}
+        =partial 'images/loading/spinner.svg'
+    .col.txt-c
+      .mbxl
+        %code .spinner-sm
+      .icon.spinner-sm{:style => "font-size:16px;"}
+        =partial 'images/loading/spinner.svg'
+
+  %h2 Icon System
+  %p We were growing tired of the Fontawesome icons and wanted to start working towards building our own icon set. Fontawesome is a great product and I highly recommend it for getting a project started quickly but we needed a more professional look that aligned with our brand aesthetic. We were debating doing direct SVGs for quality and accessibility reasons or a font icon for ease of use. Again I dug deep and utilized the collective knowledge of the internet to come to a solution that works great for us. We decided to use React to build out a simple component that can will generate an SVG based on its matching name in a folder. We also built this into a number of other components like buttons so they can use the same system. One of the major drawbacks to SVG icons vs. font icons is that SVGs are treated like normal elements inside of text so they automatically align to the baseline of the text they are based to. If we have a padding based into the SVGs this suddenly gets annoying because you have to custom place every single SVG you set next to a text element. I wrote an article about my solution to this problem here. By using a consistent wrangling class and applying a modifier class we are able to pull the icon down when using the `.icon-baseline` modifier to align perfectly with the text. This gives us the beautiful easy use of an icon font with the quality and accessibility of SVGs.
+  %p.mbn You can read all about my approach in my Medium post:
+  .default-type.mbxl
+    %a{:href => "https://blog.prototypr.io/align-svg-icons-to-text-and-say-goodbye-to-font-icons-d44b3d7b26b4", :target => "_blank"}
+      .svgicon.svg-baseline
+        =partial 'images/svg-lib/chevron_right.svg'
+      Align SVG Icons to Text and Say Goodbye to Font Icons
+      .svgicon.svg-baseline
+        =partial 'images/svg-lib/open_in_new.svg'
+  %h2 New Style Guide
+  %p Contribution is a major component for Pivotal UI’s continued growth. We recently launched a new style guide which was a collaboration of multiple designers and the PUI team. Still a work in progress but the inpage React and HTML editable examples are great for experimentation.
+  .default-type.mbl
+    %a{:href => "https://styleguide.pivotal.io", :target => "_blank"}
+      .svgicon.svg-baseline
+        =partial 'images/svg-lib/chevron_right.svg'
+      The new Pivotal UI Style Guide
+      .svgicon.svg-baseline
+        =partial 'images/svg-lib/open_in_new.svg'
+  %h2 Outcomes
+  %ul
+    %li Faster turnaround from design to engineering.
+    %Li Clearer communication and consistency amongst designers.
+    %li Accessibility standards built into key components.
+    %li Engineers are writing less custom front-end code because it just works.
