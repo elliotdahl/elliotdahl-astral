@@ -8,19 +8,38 @@ body.portfolio {
     font-family: 'Shrikhand', cursive;
   }
 
-  p {
+  p, .default-type {
     font-size:18px;
     line-height: 28px;
   }
   .content-area ul {
     font-size: 18px;
-    margin: 8px 0 16px -24px;
+    margin: 8px 0 16px 0;
   }
   a {
     color:$p-link;
     &:hover {
       color:$p-link;
-      background-image: linear-gradient(rgba(0, 0, 0, 0) 70%, $p-link-hover 70%, $p-link-hover 99%,rgba(0, 0, 0, 0) 99%)
+      background-image: linear-gradient(rgba(0, 0, 0, 0) 75%, $p-link-hover 75%, $p-link-hover 99%,rgba(0, 0, 0, 0) 99%)
     }
+    svg {
+      fill:$p-link;
+    }
+  }
+  h2 {
+    font-weight: 600;
+    margin-bottom: 16px;
+    margin-top:24px;
+  }
+  .quote {
+    font-size:32px;
+    line-height: 40px;
+    font-weight: 600;
+    font-style: italic;
+    color:$orange-dark;
+    margin-top: 32px;
+  }
+  .sub-quote {
+    color:$sub-text-color;
   }
 }

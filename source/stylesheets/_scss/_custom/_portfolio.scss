@@ -1,7 +1,10 @@
 
 
 .portfolio {
-  background-color: #FAFCFF;
+  // background-color: #FAFCFF;
+  background-color: #eef6fc;
+background-image: linear-gradient(90deg, #eef6fc 0%, #fafcff 100%);
+
   // background: rgba(220,231,245,1);
   // background: -moz-linear-gradient(left, rgba(220,231,245,1) 0%, rgba(220,231,245,1) 33%, rgba(250,252,255,1) 33%, rgba(250,252,255,1) 100%);
   // background: -webkit-gradient(left top, right top, color-stop(0%, rgba(220,231,245,1)), color-stop(33%, rgba(220,231,245,1)), color-stop(33%, rgba(250,252,255,1)), color-stop(100%, rgba(250,252,255,1)));
@@ -13,16 +16,43 @@
   &:after {
     content: "";
     z-index: -2;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 33vw;
     height: 100%;
-    background-color: #DCE7F5;
+    //background-color: #DCE7F5;
     background-image: url(../images/giggle-background.png);
     background-size: 240px 480px;
     background-repeat: repeat;
+    opacity: .8;
+  }
+  &:before {
+    content: "";
+    z-index: -2;
+    position: fixed;
+    top: 0;
+    width: 33vw;
+    height: 100%;
+    //background-color: #DCE7F5;
+    background-color: #8090e7;
+    background-image: linear-gradient(12deg, #8090e7 0%, #98ccf5 100%);
 
   }
+  // &:before {
+  //   content: "";
+  //   z-index: -2;
+  //   position: fixed;
+  //   top: 0;
+  //   left:33vw;
+  //   width: 67vw;
+  //   height: 100%;
+  //   // background-color: #DCE7F5;
+  //   background-image: url(../images/hex-background@2x.png);
+  //   background-size: 1920px 1920px;
+  //   background-size:960px 960px;
+  //   background-repeat: repeat;
+  //   background-position: center;
+  // }
   .page {
     // width:960px;
     // font-size:16px;
@@ -63,7 +93,7 @@
     }
     .nav-title {
       font-size:12px;
-      color:#8497B8;
+      color:$sub-text-color;
     }
     a {
       color:$dark-blue-1;
@@ -79,9 +109,9 @@
     padding:48px;
     max-width:736px;
     background-color: white;
-    -webkit-box-shadow: 16px 8px 24px 0px rgba(0,0,0,0.05);
-    -moz-box-shadow: 16px 8px 24px 0px rgba(0,0,0,0.05);
-    box-shadow: 16px 8px 24px 0px rgba(0,0,0,0.05);
+    -webkit-box-shadow: $content-box-shadow;
+    -moz-box-shadow: $content-box-shadow;
+    box-shadow: $content-box-shadow;
   }
   section.section-head {
     z-index: 100;
@@ -127,7 +157,12 @@
     height: calc(100vh - 528px);
   }
 }
-
-.img-width {
-  width:100%;
+.img-wrap {
+  margin:16px 0;
+  .img-handler {
+    width:100%;
+  }
+  .img-subtitle {
+    color:$sub-text-color;
+  }
 }
