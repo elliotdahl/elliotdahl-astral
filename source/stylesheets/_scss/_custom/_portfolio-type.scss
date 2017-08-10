@@ -20,7 +20,7 @@ body.portfolio {
     color:$p-link;
     &:hover {
       color:$p-link;
-      background-image: linear-gradient(rgba(0, 0, 0, 0) 75%, $p-link-hover 75%, $p-link-hover 99%,rgba(0, 0, 0, 0) 99%)
+      background-image: linear-gradient(rgba(0, 0, 0, 0) 80%, $p-link-hover 80%, $p-link-hover 99%,rgba(0, 0, 0, 0) 99%)
     }
     svg {
       fill:$p-link;
