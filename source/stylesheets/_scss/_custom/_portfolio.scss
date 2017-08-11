@@ -162,6 +162,12 @@ background-image: linear-gradient(90deg, #eef6fc 0%, #fafcff 100%);
     border:solid gold 1px;
     height: calc(100vh - 528px);
   }
+  img.selp-image {
+    max-width: 460px;
+    border:solid 4px $purple-light;
+  }
+
+
 }
 .img-wrap {
   margin:16px 0;
