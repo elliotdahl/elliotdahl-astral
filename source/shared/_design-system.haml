@@ -43,7 +43,7 @@
 
   %h2 Flex Grid
   %p
-    Our teams were starting to use flexbox more in our page and content layouts but we were running into issues with conflicting styles and inconsistent approaches. This was the perfect place for a framework to come in and lay down some opinions. I came up with the flex grid concept after pouring over other major column grid layouts and comparing them to our layout needs. I wanted to give the developers the power of flexbox without all the complexity. This new column grid also needed to be able to live alongside the classic bootstrap column grid without conflict. I took a functional approach to the CSS and writing a column system that gives you exactly what you ask for with no surprises. Driven out by the needs of our products the Flex Grid has become the solution for almost every layout question. When used consistently it can be stacked and nested without any unforeseen consequences. We’ve been able to root out and remove all of the old monkey patched flexbox CSS in
+    Our teams were starting to use flexbox more in our page and content layouts but we were running into issues with conflicting styles and inconsistent approaches. This was the perfect place for a framework to come in and lay down some opinions. I came up with the flex grid concept after pouring over other major column grid layouts and comparing them to our layout needs. I wanted to give the developers the power of flexbox without all the complexity. This new column grid also needed to be able to live alongside the classic bootstrap column grid without conflict. I took a functional approach to the CSS and writing a column system that gives you exactly what you ask for with no surprises. Driven out by the needs of our products the Flex Grid has become the solution for almost every layout question. When used consistently it can be stacked and nested without any unforeseen consequences. We’ve been able to root out and remove all of the old monkey-patched flexbox CSS in
     %a{:href => "#product"} Apps Manager
     simplifying the codebase.
   .img-wrap
@@ -76,7 +76,7 @@
         =partial 'images/loading/spinner.svg'
 
   %h2 Icon System
-  %p We were growing tired of the Fontawesome icons and wanted to start working towards building our own icon set. Fontawesome is a great product and I highly recommend it for getting a project started quickly but we needed a more professional look that aligned with our brand aesthetic. We were debating doing direct SVGs for quality and accessibility reasons or a font icon for ease of use. Again I dug deep and utilized the collective knowledge of the internet to come to a solution that works great for us. We decided to use React to build out a simple component that can will generate an SVG based on its matching name in a folder. We also built this into a number of other components like buttons so they can use the same system. One of the major drawbacks to SVG icons vs. font icons is that SVGs are treated like normal elements inside of text so they automatically align to the baseline of the text they are based to. If we have a padding based into the SVGs this suddenly gets annoying because you have to custom place every single SVG you set next to a text element. I wrote an article about my solution to this problem here. By using a consistent wrangling class and applying a modifier class we are able to pull the icon down when using the `.icon-baseline` modifier to align perfectly with the text. This gives us the beautiful easy use of an icon font with the quality and accessibility of SVGs.
+  %p We were growing tired of the Fontawesome icons and wanted to start working towards building our own icon set. Fontawesome is a great product and I highly recommend it for getting a project started quickly but we needed a more professional look that aligned with our brand aesthetic. We were debating doing direct SVGs for quality and accessibility reasons or a font icon for ease of use. Again I dug deep and utilized the collective knowledge of the internet to come to a solution that works great for us. We decided to use React to build out a simple component that can will generate an SVG based on its matching name in a folder. We also built this into a number of other components like buttons so they can use the same system. One of the major drawbacks to SVG icons vs. font icons is that SVGs are treated like normal elements inside of text so they automatically align to the baseline of the text they are based to. If we have a padding based into the SVGs this suddenly gets annoying because you have to custom place every single SVG you set next to a text element. By using a consistent wrangling class and applying a modifier class we are able to pull the icon down when using the `.icon-baseline` modifier to align perfectly with the text. This gives us the beautiful easy use of an icon font with the quality and accessibility of SVGs.
   .img-wrap
     %img.img-handler{:src => "images/portfolio/svg-icons.png"}
   %p.mbn You can read all about my approach in my Medium post:
@@ -98,7 +98,7 @@
         =partial 'images/svg-lib/open_in_new.svg'
   %h2 Outcomes
   %ul
-    %li Faster turnaround from design to engineering.
-    %Li Clearer communication and consistency amongst designers.
-    %li Accessibility standards built into key components.
-    %li Engineers are writing less custom front-end code because it just works.
+    %li Faster turnaround from design to engineering
+    %Li Clearer communication and consistency amongst designers
+    %li Accessibility standards built into key components
+    %li Engineers are writing less custom front-end code because it just works
