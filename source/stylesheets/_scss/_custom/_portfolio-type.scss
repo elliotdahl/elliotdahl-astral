@@ -26,6 +26,9 @@ body.portfolio {
       fill:$p-link;
     }
   }
+  p + h2, div + h2, ul + h2 {
+    margin-top:24px;
+  }
   h2 {
     font-weight: 600;
     margin-bottom: 16px;

@@ -140,17 +140,17 @@ background-image: linear-gradient(90deg, #eef6fc 0%, #fafcff 100%);
   }
   .content-area {
     position: relative;
-    margin-top:288px;
+    margin-top:calc(50vh - 212px);
     margin-bottom: 120px;
     // pointer-events: none;
 
   }
   .welcome {
-    position: absolute;
-    top:-168px;
+    // position: absolute;
+    // top:-168px;
     h1 {
       font-size:72px;
-      line-height: 96px;
+      line-height: 72px;
     }
     i {
       font-size: 48px;
@@ -159,8 +159,8 @@ background-image: linear-gradient(90deg, #eef6fc 0%, #fafcff 100%);
     }
   }
   .draw-box {
-    border:solid gold 1px;
-    height: calc(100vh - 528px);
+    //border:solid gold 1px;
+    height: calc(50vh - 212px);
   }
   img.selp-image {
     max-width: 460px;
