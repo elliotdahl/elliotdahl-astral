@@ -31,7 +31,7 @@ body.portfolio {
   }
   h2 {
     font-weight: 600;
-    margin-bottom: 16px;
+    //margin-bottom: 16px;
   }
   .quote {
     font-size:32px;
@@ -44,5 +44,8 @@ body.portfolio {
   .sub-quote {
     color:$sub-text-color;
     margin-bottom:32px;
+  }
+  .rounded {
+    border-radius: 4px;
   }
 }
