@@ -1,0 +1,65 @@
+@media only screen and (max-width: 1072px) {
+  .portfolio {
+    section.content {
+      margin-left:56px;
+      margin-right:56px;
+    }
+    section.section-head {
+      .section-head-content {
+        margin-left: 56px;
+        margin-right: 56px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .portfolio {
+    &:before, &:after {
+      width: 100%;
+    }
+    .content-area {
+      margin-top: calc(100vh - 132px);
+    }
+    p, .default-type {
+      font-size:16px;
+      line-height: 24px;
+    }
+    .content-area ul {
+      font-size: 16px;
+    }
+    .page-frame {
+      border-width: 4px;
+    }
+    .welcome {
+      h1 {
+        font-size:40px;
+        line-height: 1;
+      }
+      i {
+        font-size: 32px;
+        line-height: 40px;
+      }
+    }
+    section.content {
+      margin-left:16px;
+      margin-right:16px;
+      padding:32px;
+    }
+    section.section-head {
+      .section-head-content {
+        margin-left:16px;
+        margin-right:16px;
+        padding-left:20px;
+      }
+      .shirkhand {
+        font-size: 40px;
+        line-height: 40px;
+      }
+      i {
+        font-size: 24px;
+        line-height: 24px;
+      }
+    }
+  }
+}
