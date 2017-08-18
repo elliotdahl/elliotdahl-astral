@@ -18,6 +18,9 @@
     &:before, &:after {
       width: 100%;
     }
+    .draw-box {
+      height: 32px;
+    }
     .content-area {
       margin-top: calc(100vh - 132px);
     }
@@ -54,7 +57,7 @@
       }
       .shirkhand {
         font-size: 40px;
-        line-height: 40px;
+        line-height: 48px;
       }
       i {
         font-size: 24px;
