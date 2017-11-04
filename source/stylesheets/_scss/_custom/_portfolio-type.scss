@@ -17,6 +17,13 @@ body.portfolio {
     font-size: 18px;
     margin: 8px 0 16px 0;
   }
+  a.no-link {
+    color:initial;
+    &:hover {
+      color:initial;
+      background-image: none;
+    }
+  }
   a {
     color:$p-link;
     &:hover {
