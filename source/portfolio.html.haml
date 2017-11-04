@@ -3,30 +3,25 @@ layout: "nofollow-layout"
 title: Elliot Dahl
 ---
 
-.page
+.page#hello
   .page-frame
-  -# .nav-wrapper
-  -#   .nav-title.em-high Portfolio
-  -#   %ul.list-unstyled
-  -#     %li
-  -#       %a{:href => "#product"} Product
-  -#     %li
-  -#       %a{:href => "#feature"} Feature
-  -#     %li
-  -#       %a{:href => "#design-system"} Design System
-  -#   .nav-title.mtxl.em-high About Me
-  -#   %ul.list-unstyled
-  -#     %li
-  -#       %a{:href => "#career"} My Career Path
-  -#     %li
-  -#       %a{:href => "#writing"} Writing
-  -#     %li
-  -#       %a{:href => "#projects"} Side Projects
-  -#     %li
-  -#       %a{:href => "#connections"} Connections
   .content-area
+    %nav
+      %ul.list-unstyled
+        %li
+          %a{:href => "#hello"} Hello
+        %li
+          %a{:href => "#product"} Product
+        %li
+          %a{:href => "#feature"} Feature
+        %li
+          %a{:href => "#design-system"} System
+        %li
+          %a{:href => "#career"} Career
+        %li
+          %a{:href => "#projects"} Projects
 
-    %section.content.rounded
+    %section.content.rounded.content-first
       .welcome.mbxl
         %i Hello,
         %h1.shirkhand I'm Elliot
@@ -49,24 +44,6 @@ title: Elliot Dahl
         = link_to("career path", "#career")
         and some of my
         = link_to("side projects", "#projects") + "."
-
-      -# .grid.mbn
-      -#   .col.col-md.col-fixed
-      -#     %h2 Portfolio
-      -#     %ul.list-unstyled
-      -#       %li
-      -#         %a{:href => "#product"} Product
-      -#       %li
-      -#         %a{:href => "#feature"} Feature
-      -#       %li
-      -#         %a{:href => "#design-system"} Design System
-      -#     %h2 About Me
-      -#     %ul.list-unstyled
-      -#       %li
-      -#         %a{:href => "#career"} My Career Path
-      -#       %li
-      -#         %a{:href => "#projects"} Side Projects
-      -#   .col.col-md.txt-c
 
 
 

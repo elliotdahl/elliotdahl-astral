@@ -1,18 +1,8 @@
 
 
 .portfolio {
-  // background-color: #FAFCFF;
   background-color: #eef6fc;
-background-image: linear-gradient(90deg, #eef6fc 0%, #fafcff 100%);
-
-  // background: rgba(220,231,245,1);
-  // background: -moz-linear-gradient(left, rgba(220,231,245,1) 0%, rgba(220,231,245,1) 33%, rgba(250,252,255,1) 33%, rgba(250,252,255,1) 100%);
-  // background: -webkit-gradient(left top, right top, color-stop(0%, rgba(220,231,245,1)), color-stop(33%, rgba(220,231,245,1)), color-stop(33%, rgba(250,252,255,1)), color-stop(100%, rgba(250,252,255,1)));
-  // background: -webkit-linear-gradient(left, rgba(220,231,245,1) 0%, rgba(220,231,245,1) 33%, rgba(250,252,255,1) 33%, rgba(250,252,255,1) 100%);
-  // background: -o-linear-gradient(left, rgba(220,231,245,1) 0%, rgba(220,231,245,1) 33%, rgba(250,252,255,1) 33%, rgba(250,252,255,1) 100%);
-  // background: -ms-linear-gradient(left, rgba(220,231,245,1) 0%, rgba(220,231,245,1) 33%, rgba(250,252,255,1) 33%, rgba(250,252,255,1) 100%);
-  // background: linear-gradient(to right, rgba(220,231,245,1) 0%, rgba(220,231,245,1) 33%, rgba(250,252,255,1) 33%, rgba(250,252,255,1) 100%);
-  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dce7f5', endColorstr='#fafcff', GradientType=1 );
+  background-image: linear-gradient(90deg, #eef6fc 0%, #fafcff 100%);
   &:after {
     content: "";
     z-index: -2;
@@ -38,26 +28,8 @@ background-image: linear-gradient(90deg, #eef6fc 0%, #fafcff 100%);
     background-image: linear-gradient(12deg, #8090e7 0%, #98ccf5 100%);
 
   }
-  // &:before {
-  //   content: "";
-  //   z-index: -2;
-  //   position: fixed;
-  //   top: 0;
-  //   left:33vw;
-  //   width: 67vw;
-  //   height: 100%;
-  //   // background-color: #DCE7F5;
-  //   background-image: url(../images/hex-background@2x.png);
-  //   background-size: 1920px 1920px;
-  //   background-size:960px 960px;
-  //   background-repeat: repeat;
-  //   background-position: center;
-  // }
   .page {
-    // width:960px;
-    // font-size:16px;
-    // line-height: 24px;
-
+    padding-top:calc(50vh - 212px);
   }
 
 
@@ -74,8 +46,8 @@ background-image: linear-gradient(90deg, #eef6fc 0%, #fafcff 100%);
   nav {
     z-index: 1;
     position: fixed;
-    top:50vh; //center this when finished
-    left:calc(50vw + 480px);
+    top:calc(50vh - 84px); //center this when finished
+    left:calc(50vw + 488px);
     &.stick {
       color:red;
     }
@@ -83,17 +55,71 @@ background-image: linear-gradient(90deg, #eef6fc 0%, #fafcff 100%);
       @extend .list-unstyled;
       li {
         margin-bottom: 0;
+        position: relative;
+        margin-left:16px;
+        ::after {
+          content:"";
+          position: absolute;
+          left:-16px;
+          top: 50%;
+          transform: translateY(-50%);
+          width:16px;
+          height: 1px;
+          background-color:$dark-blue-1;
+        }
+        // &.active {
+        //   margin-left:24px;
+        //   ::after {
+        //     content:"";
+        //     left:-24px;
+        //     width:24px;
+        //     height: 2px;
+        //     background-color:$dark-blue-1;
+        //   }
+        // }
+      }
+    }
+    &:not(:hover) li.active {
+        margin-left:24px;
+        ::after {
+          content:"";
+          left:-24px;
+          width:24px;
+          height: 2px;
+          background-color:$dark-blue-1;
+        }
+        a {
+          color:$dark-blue-1;
+        }
+    }
+    li:hover {
+      margin-left:24px;
+      transition: all .15s ease-out;
+      ::after {
+        content:"";
+        left:-24px;
+        width:24px;
+        height: 2px;
+        background-color:$dark-blue-1;
+        transition: all .15s ease-out;
+      }
+      a {
+        color:$dark-blue-1;
       }
     }
     li a {
+      color:transparent;
       display: block;
       margin-left: 8px;
       font-size: 12px;
       line-height: 24px;
       font-weight: 600;
-      &.active {
-        margin-left:16px;
+
+      &:hover {
+        color:$dark-blue-1;
+        background-image: none;
       }
+
     }
   }
   section.content {
@@ -132,9 +158,11 @@ background-image: linear-gradient(90deg, #eef6fc 0%, #fafcff 100%);
   }
   .content-area {
     position: relative;
-    margin-top:calc(50vh - 212px);
+    // margin-top:calc(50vh - 212px);
     margin-bottom: 120px;
     // pointer-events: none;
+  }
+  .content-first {
 
   }
   .welcome {
