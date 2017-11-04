@@ -1,5 +1,7 @@
 
-
+.hide {
+  display: none;
+}
 .portfolio {
   background-color: #eef6fc;
   background-image: linear-gradient(90deg, #eef6fc 0%, #fafcff 100%);
@@ -43,15 +45,45 @@
     overflow: hidden;
 
   }
-  header {
+
+  .menu-btn {
     display: none;
     position: fixed;
+    z-index: 101;
+    bottom:24px;
+    right:24px;
+    background-color:#546A8C;
+    border-radius: 100%;
+    width: 64px;
+    height: 64px;
+    .svgicon {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 32px;
+      svg {
+        fill:$dark-blue-light;
+      }
+    }
+  }
+
+  .splash-nav {
+    position: fixed;
     top:0;
-    height: 40px;
-    width: 100%;
-    border:solid 1px red;
-    &.nav-up {
-      top:-40px;
+    background-color: $dark-blue-1;
+    z-index: 102;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px;
+    a {
+      display: block;
+      font-size: 32px;
+      line-height: 64px;
+      color:$purple-light;
+      &:hover {
+        color:$purple-light;
+        background-image: none;
+      }
     }
   }
   nav {
@@ -59,6 +91,7 @@
     position: fixed;
     top:calc(50vh - 84px); //center this when finished
     left:calc(50vw + 488px);
+
     .nav-items {
         a {
           display: block;
@@ -102,6 +135,7 @@
       }
     }
   }
+
   section.content {
     // margin-left:15%;
     // max-width:736px;
@@ -139,7 +173,8 @@
   .content-area {
     position: relative;
     // margin-top:calc(50vh - 212px);
-    margin-bottom: 120px;
+    
+    margin-bottom: calc(100vh - 680px);
     // pointer-events: none;
   }
   .content-first {

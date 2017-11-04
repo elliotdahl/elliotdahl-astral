@@ -6,15 +6,38 @@ title: Elliot Dahl
 .page
   .page-frame
   .content-area
-    %header.nav-down Header Stuff
-    %nav#menu
-      .nav-items
+    -# %header.nav-down
+    -#   .grid
+    -#     .col
+    -#     .col.col-fixed
+    -#       .menu-btn
+    -#         .svgicon
+    -#           =partial 'images/svg-lib/menu.svg'
+    .menu-btn#menu-open
+      .svgicon
+        =partial 'images/svg-lib/menu.svg'
+    .splash-nav.hide#menu
+      .grid
+        .col
+        .col.col-fixed
+          .menu-btn#menu-close
+            .svgicon
+              =partial 'images/svg-lib/close.svg'
+      .nav-items#mobile-menu
         %a.active{:href => "#hello"} Hello
         %a{:href => "#product"} Product
         %a{:href => "#feature"} Feature
         %a{:href => "#design-system"} System
         %a{:href => "#career"} Career
         %a{:href => "#projects"} Projects
+    %nav#menu
+      .nav-items
+        %a.smoothscroll.active{:href => "#hello"} Hello
+        %a.smoothscroll{:href => "#product"} Product
+        %a.smoothscroll{:href => "#feature"} Feature
+        %a.smoothscroll{:href => "#design-system"} System
+        %a.smoothscroll{:href => "#career"} Career
+        %a.smoothscroll{:href => "#projects"} Projects
 
     %section.content.rounded.content-first#hello
       .welcome.mbxl

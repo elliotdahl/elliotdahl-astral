@@ -25,14 +25,14 @@
     .draw-box {
       height: 32px;
     }
-    header {
-      display: block;
+    .menu-btn {
+      display: initial;
     }
     nav {
       display: none;
     }
     .content-area {
-      //margin-top: calc(100vh - 132px);
+      margin-bottom: 120px;
     }
     p, .default-type {
       font-size:16px;
