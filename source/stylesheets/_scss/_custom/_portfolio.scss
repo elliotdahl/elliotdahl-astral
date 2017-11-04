@@ -43,83 +43,63 @@
     overflow: hidden;
 
   }
+  header {
+    display: none;
+    position: fixed;
+    top:0;
+    height: 40px;
+    width: 100%;
+    border:solid 1px red;
+    &.nav-up {
+      top:-40px;
+    }
+  }
   nav {
     z-index: 1;
     position: fixed;
     top:calc(50vh - 84px); //center this when finished
     left:calc(50vw + 488px);
-    &.stick {
-      color:red;
-    }
-    ul {
-      @extend .list-unstyled;
-      li {
-        margin-bottom: 0;
-        position: relative;
-        margin-left:16px;
-        ::after {
-          content:"";
-          position: absolute;
-          left:-16px;
-          top: 50%;
-          transform: translateY(-50%);
-          width:16px;
-          height: 1px;
-          background-color:$dark-blue-1;
+    .nav-items {
+        a {
+          display: block;
+          font-size: 12px;
+          line-height: 4px;
+          font-weight: 600;
+          padding:10px 0;
+          color:transparent;
+          &:hover {
+            //color:$dark-blue-1;
+            background-image: none;
+          }
+          &::before {
+            content:"";
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 4px;
+            width:16px;
+            height: 1px;
+            background-color:$dark-blue-1;
+            transition: all .15s ease-out;
+          }
+          &:hover {
+            color:$purple-dark;
+            &::before {
+              width:24px;
+              height: 2px;
+              background-color:$purple-dark;
+              transition: all .15s ease-out;
+            }
+          }
         }
-        // &.active {
-        //   margin-left:24px;
-        //   ::after {
-        //     content:"";
-        //     left:-24px;
-        //     width:24px;
-        //     height: 2px;
-        //     background-color:$dark-blue-1;
-        //   }
-        // }
-      }
-    }
-    &:not(:hover) li.active {
-        margin-left:24px;
-        ::after {
-          content:"";
-          left:-24px;
+      &:not(:hover) a.active {
+        color:$purple-dark;
+        &::before {
           width:24px;
           height: 2px;
-          background-color:$dark-blue-1;
+          background-color:$purple-dark;
+          transition: all .15s ease-out;
         }
-        a {
-          color:$dark-blue-1;
-        }
-    }
-    li:hover {
-      margin-left:24px;
-      transition: all .15s ease-out;
-      ::after {
-        content:"";
-        left:-24px;
-        width:24px;
-        height: 2px;
-        background-color:$dark-blue-1;
-        transition: all .15s ease-out;
       }
-      a {
-        color:$dark-blue-1;
-      }
-    }
-    li a {
-      color:transparent;
-      display: block;
-      margin-left: 8px;
-      font-size: 12px;
-      line-height: 24px;
-      font-weight: 600;
-
-      &:hover {
-        color:$dark-blue-1;
-        background-image: none;
-      }
-
     }
   }
   section.content {

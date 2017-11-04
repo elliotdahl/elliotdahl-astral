@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  console.log("scroll me");
     $(document).on("scroll", onScroll);
 
     //smoothscroll
@@ -13,7 +12,7 @@ $(document).ready(function () {
         $(this).addClass('active');
 
         var target = this.hash,
-            nav = target;
+            menu = target;
         $target = $(target);
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top+2
@@ -26,11 +25,11 @@ $(document).ready(function () {
 
 function onScroll(event){
     var scrollPos = $(document).scrollTop();
-    $('nav a').each(function () {
+    $('#menu a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('nav ul li a').removeClass("active");
+            $('#menu a').removeClass("active");
             currLink.addClass("active");
         }
         else{

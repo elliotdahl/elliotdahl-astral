@@ -1,8 +1,12 @@
-@media only screen and (max-width: 1072px) {
+@media only screen and (max-width: 1180px) {
   .portfolio {
+    nav {
+      left:calc(100vw - 136px);
+    }
+
     section.content {
       margin-left:56px;
-      margin-right:56px;
+      margin-right:144px;
     }
     section.section-head {
       .section-head-content {
@@ -13,7 +17,7 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 560px) {
   .portfolio {
     &:before, &:after {
       width: 100%;
@@ -21,8 +25,14 @@
     .draw-box {
       height: 32px;
     }
+    header {
+      display: block;
+    }
+    nav {
+      display: none;
+    }
     .content-area {
-      margin-top: calc(100vh - 132px);
+      //margin-top: calc(100vh - 132px);
     }
     p, .default-type {
       font-size:16px;
@@ -32,7 +42,7 @@
       font-size: 16px;
     }
     .page-frame {
-      border-width: 4px;
+      border-width: 0px;
     }
     .welcome {
       h1 {

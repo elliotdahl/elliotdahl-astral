@@ -3,25 +3,20 @@ layout: "nofollow-layout"
 title: Elliot Dahl
 ---
 
-.page#hello
+.page
   .page-frame
   .content-area
-    %nav
-      %ul.list-unstyled
-        %li
-          %a{:href => "#hello"} Hello
-        %li
-          %a{:href => "#product"} Product
-        %li
-          %a{:href => "#feature"} Feature
-        %li
-          %a{:href => "#design-system"} System
-        %li
-          %a{:href => "#career"} Career
-        %li
-          %a{:href => "#projects"} Projects
+    %header.nav-down Header Stuff
+    %nav#menu
+      .nav-items
+        %a.active{:href => "#hello"} Hello
+        %a{:href => "#product"} Product
+        %a{:href => "#feature"} Feature
+        %a{:href => "#design-system"} System
+        %a{:href => "#career"} Career
+        %a{:href => "#projects"} Projects
 
-    %section.content.rounded.content-first
+    %section.content.rounded.content-first#hello
       .welcome.mbxl
         %i Hello,
         %h1.shirkhand I'm Elliot
@@ -48,11 +43,16 @@ title: Elliot Dahl
 
 
     .draw-box
-    =partial 'shared/product'
-    =partial 'shared/feature'
-    =partial 'shared/design-system'
-    =partial 'shared/career'
-    =partial 'shared/projects'
+    #product
+      =partial 'shared/product'
+    #feature
+      =partial 'shared/feature'
+    #design-system
+      =partial 'shared/design-system'
+    #career
+      =partial 'shared/career'
+    #projects
+      =partial 'shared/projects'
     -# =partial 'shared/nav_menu'
 
 
