@@ -56,6 +56,7 @@
     border-radius: 100%;
     width: 64px;
     height: 64px;
+    @extend .box-shadow-3;
     .svgicon {
       top: 50%;
       left: 50%;
@@ -173,7 +174,7 @@
   .content-area {
     position: relative;
     // margin-top:calc(50vh - 212px);
-    
+
     margin-bottom: calc(100vh - 680px);
     // pointer-events: none;
   }
