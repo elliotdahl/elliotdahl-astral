@@ -214,3 +214,41 @@
     color:$sub-text-color;
   }
 }
+.social-icons {
+  font-size:24px;
+  .col {
+    position: relative;
+  }
+  a {
+    padding:0 8px;
+    &:after {
+      content:"";
+      position: absolute;
+      z-index: -1;
+      bottom:-4px;
+      left: 50%;
+      transform: translateX(-50%);
+      width:1px;
+      height: 4px;
+    }
+    &:hover {
+      &:after {
+        content:"";
+        position: absolute;
+        z-index: -1;
+        bottom:-4px;
+        left: 50%;
+        transform: translateX(-50%);
+        width:32px;
+        height: 4px;
+        background-color:$p-link-hover;
+        transition: all .15s ease-out;
+      }
+    }
+  }
+}
+#projects .social-icons {
+  position: absolute;
+  right:16px;
+  bottom:-64px;
+}
