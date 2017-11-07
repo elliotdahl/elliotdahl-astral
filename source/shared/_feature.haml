@@ -4,23 +4,31 @@
     %i Service Provision (Apps Manager)
     .subtitle 3 weeks • Product Designer
 %section.content
+  %h2 Problem Statement
+  %p We have observed that Apps Manager isn’t helping developers to provision (create) services quickly which is causing confusion and improper provisioning. How might we improve the service provision flow to reduce confusion.
+
+  .img-wrap
+    %a.no-link{:href => "images/portfolio/journey-map-provision.png", "data-featherlight" => "image"}
+      %img.img-handler{:src => "images/portfolio/journey-map-provision.png"}
+    .img-subtitle Developer on the application lifecycle journey map with the management zone highlighted
+
   %h2 Background
-  %p Cloud Foundry is a platform that promotes cloud native 12 factor applications that fit into a microservices architecture. Services are a part of the microservices architecture and provisioning (creating) a new service is a common action. A service supports your application and can, for example, be a database of customer information, an application auto-scaler, or an email delivery client.
+  %p Cloud Foundry is built for cloud native 12 factor applications that fit into a microservices architecture. Services are a part of the microservices architecture and provisioning (creating) a new service is a common action. A service supports your application and can, for example, be a database of customer information, a message broker, or an email delivery client.
   .img-wrap
     %a.no-link{:href => "images/portfolio/microservices-architecture.png", "data-featherlight" => "image"}
       %img.img-handler{:src => "images/portfolio/microservices-architecture.png"}
     .img-subtitle Reference from Pivotal.io
-  %p Essentially as a developer (user) I have an application running on the platform and I need a database so I can store my customer's information. Adding an object with a relationship to the object I already have.
-  %p Still with me?
-  %h2 The Problem
-  %p In my research developers indicated a lot of confusion around the service provision flow.
+  %h2 The Plan
   %ul
-    %Li Where is my service being provisioned?
-    %Li How do I know what the configuration is?
-    %li Why is this flow so long?
+    %li Define problem/build context
+    %li Write out scenarios (need, action, feedback, responses)
+    %li Sketching/Wireframing
+    %li Visuals (Sketch)
+    %li Prototype and validate (Invision or HTML)
+    %li Ship it/Measure it
 
   %h2 Scenario writing
-  %p There are three ways a developer might provision a service. In the context of an app, from a space, or directly from the marketplace and then placed into a space and bound to an app. Writing scenarios for each of these flows was a great way to flesh out the flow and have a conversation about constraints and expectations without getting caught up on visuals.
+  %p There are three ways a developer might provision a service in the UI today. In the context of an app, a space, or directly from the marketplace. Writing scenarios with the team for each of these flows was a great way to flesh out the flow and have a conversation about constraints and expectations without getting caught up on visuals.
   %p.mbn Scenario Format:
   %ul.mbxxl
     %li
@@ -38,17 +46,17 @@
       %img.img-handler{:src => "images/portfolio/scenario-whiteboard.jpg"}
     .img-subtitle Whiteboard picture from our scenario team exercise
   %h2 Sketching / Wireframing
-  %p Having a shared understanding of the 3 scenarios clearly laid out it was time to go wide with some different visuals for what this could look like. I started with sketching on post-it notes and using them to frame up a basic storyboard. This helped me to visually see which flow could cut down on steps and constrain my visuals.
+  %p Having a shared understanding of the 3 scenarios clearly laid out it was time to go wide with some different ideas for what this could look like. I started with sketching on post-it notes and using them to frame up a basic storyboard. This helped me to visually see which flow could cut down on steps and keep me from getting too detailed yet.
   .img-wrap
     %a.no-link{:href => "images/portfolio/feature-post-it.png", "data-featherlight" => "image"}
       %img.img-handler{:src => "images/portfolio/feature-post-it.png"}
     .img-subtitle Post-it storyboard user flows
-  %p Next I sketched on my iPad using the Concepts app to quickly iterate through a chosen visual flow. This is what I'll walk through with my PM and lead engineer.
+  %p Next I sketched on my iPad using the Concepts app to quickly iterate through a chosen visual flow. This is what I'll walk through with my PM and lead engineer to ensure I’m moving in the right direction.
   .img-wrap
     %a.no-link{:href => "images/portfolio/sketch-feature.png", "data-featherlight" => "image"}
       %img.img-handler{:src => "images/portfolio/sketch-feature.png"}
   %h2 Visuals
-  %p This particular flow is pretty easy on the visuals and more difficult on the interactions. I had a bunch of reusable sketch bits that fit to our design framework so the visuals came together easily. I stitched together an InVision flow and used that to do some basic validation with users and the team that I was moving in the right direction.
+  %p This particular flow is pretty easy on the visuals and more difficult on the interactions. I had a bunch of reusable sketch bits that fit to our design framework so the visuals came together easily. I stitched together an InVision flow and used that to do some basic validation with users and the team that I was still moving in the right direction.
   .grid.mbn
     .col.col-sm
       .img-wrap.mbn
@@ -84,6 +92,6 @@
     is opinionated about spacing and contains a number of reusable patterns. At most I'll call out a few components and colors but the engineers can usually get the design 90% of the way there and I'll come in at the end to give feedback for the final 10%.
   %h2 Measure
   %p
-    This feature is currently in the final stages of being shipped. Once pushed to production on
+    This feature has been freshly shipped. On
     %a{:href => "http://run.pivotal.io/"} Pivotal Web Services
-    we will track and measure user engagement with the new flow and continue to gather feedback from ongoing user research. PCF customers will receive this in the 1.12 update coming next month.
+    we’ve been able to track and measure user engagement with the new flow and continue to gather feedback from ongoing user research. PCF customers will receive this in the 1.12 update that is now available.
