@@ -17,16 +17,18 @@
       .svgicon.svg-baseline
         =partial 'images/svg-lib/open_in_new.svg'
   %h2 Role
-  %p I've played designer, PM, and front-end engineer on the team at different points. Most recently leading the design and product direction for PUI. All major decisions are made by a balanced team (PM, Design, Engineer) with key contributors and consumers often weighing in.
+  %p I've played designer, PM, and front-end engineer on the team at different points. Most recently, leading the design and product direction for PUI. All major decisions are made by a balanced team (PM, Design, Engineer) with key contributors and consumers often weighing in.
   %h2 Vision Statement
   %p Empower designers and developers to efficiently build consistent UIs and provide high quality UX to PCF customers.
 
   %h2 Transition to the 8pt grid
-  %p PUI's spatial system thinking was one of the first areas I wanted to dig into. Being based on Bootstrap the framework had no strong opinions about sizing and spacing. It's pretty difficult to create new components and update old ones without a consistent spacing method. We experienced this as teams were starting to grow further apart and approaching their design from different perspectives. The 8pt grid gave us a consistent system for deciding how to build new components and align old ones. This was an extensive CSS change digging deep into the roots of the framework. Ideally this would be the first thing a framework would decide on but we needed to retroactively go through every component and bring it up to speed. The outcome was that suddenly our form elements clicked together, white-spacing content was easier, intricate components played nicely with the elements around them, and all of this added up to greater consistency across our products.
+  %p PUI's spatial system thinking was one of the first areas I wanted to dig into. Being based on Bootstrap the framework had no strong opinions about sizing and spacing. It's pretty difficult to create new components and update old ones without a consistent spacing method. We experienced this as teams were starting to grow further apart and approaching their design from different perspectives.
+  %p The 8pt grid gave us a consistent system for deciding how to build new components and align old ones. This was an extensive CSS change digging deep into the roots of the framework. Ideally this would be the first thing a framework would decide on but we needed to retroactively go through every component and bring it up to speed. The outcome was that suddenly our form elements clicked together, white-spacing content was easier, intricate components played nicely with the elements around them, and all of this added up to greater consistency across our products.
+
   .img-wrap
     %a.no-link{:href => "images/portfolio/8-pt-hero.png", "data-featherlight" => "image"}
       %img.img-handler{:src => "images/portfolio/8-pt-hero.png"}
-  %p To better explain this direction to the company I started writing a series of blog posts that garnered a good amount of attention from the design community. I still have so much to write about all of my learnings. Here are two published posts:
+  %p To better explain this direction to the company I started writing a series of blog posts that garnered a good amount of attention from the design community. I still have so much to write about all of my learnings. Here are three published posts:
   .default-type.mbl
     %a{:href => "https://builttoadapt.io/intro-to-the-8-point-grid-system-d2573cde8632", :target => "_blank"}
       .svgicon.svg-baseline
@@ -34,23 +36,32 @@
       Intro to The 8-Point Grid System
       .svgicon.svg-baseline
         =partial 'images/svg-lib/open_in_new.svg'
-  .default-type.mbxl
+  .default-type.mbl
     %a{:href => "https://builttoadapt.io/8-point-grid-borders-and-layouts-e91eb97f5091", :target => "_blank"}
       .svgicon.svg-baseline
         =partial 'images/svg-lib/chevron_right.svg'
       8-Point Grid: Borders and Layouts
       .svgicon.svg-baseline
         =partial 'images/svg-lib/open_in_new.svg'
+  .default-type.mbxl
+    %a{:href => "https://builttoadapt.io/8-point-grid-vertical-rhythm-90d05ad95032", :target => "_blank"}
+      .svgicon.svg-baseline
+        =partial 'images/svg-lib/chevron_right.svg'
+      8-Point Grid: Vertical Rhythm
+      .svgicon.svg-baseline
+        =partial 'images/svg-lib/open_in_new.svg'
 
   %h2 Flex Grid
   %p
-    Our teams were starting to use flexbox more in our page and content layouts but we were running into issues with conflicting styles and inconsistent approaches. This was the perfect place for a framework to come in and lay down some opinions. I came up with the flex grid concept after pouring over other major column grid layouts and comparing them to our layout needs. I wanted to give the developers the power of flexbox without all the complexity. This new column grid also needed to be able to live alongside the classic bootstrap column grid without conflict. I took a functional approach to the CSS and writing a column system that gives you exactly what you ask for with no surprises. Driven out by the needs of our products the Flex Grid has become the solution for almost every layout question. When used consistently it can be stacked and nested without any unforeseen consequences. We’ve been able to root out and remove all of the old monkey-patched flexbox CSS in
+    Our teams were starting to use flexbox more in our page and content layouts but we were running into issues with conflicting styles and inconsistent approaches. This was the perfect place for a framework to come in and lay down some opinions.
+  %p
+    I came up with the flex grid concept after pouring over other major column grid layouts and comparing them to our layout needs. I wanted to give the developers the power of flexbox without all the complexity. This new column grid also needed to be able to live alongside the classic bootstrap column grid without conflict. I took a functional approach to the CSS and writing a column system that gives you exactly what you ask for with no surprises. Driven out by the needs of our products the Flex Grid has become the solution for almost every layout question. When used consistently it can be stacked and nested without any unforeseen consequences. We’ve been able to root out and remove all of the old monkey-patched flexbox CSS in
     %a{:href => "#product"} Apps Manager
     simplifying the codebase.
   .img-wrap
     %a.no-link{:href => "images/portfolio/flex-grid-example.png", "data-featherlight" => "image"}
       %img.img-handler{:src => "images/portfolio/flex-grid-example.png"}
-  %p I open sourced and made a mini-site for the code that I wrote. Still working on a blog post and wider share out.
+  %p I open sourced it and made a mini-site for the code that I wrote. Still working on a blog post and wider share out.
   .default-type.mbxl
     %a{:href => "http://flexgridlite.elliotdahl.com/", :target => "_blank"}
       .svgicon.svg-baseline
@@ -59,7 +70,9 @@
       .svgicon.svg-baseline
         =partial 'images/svg-lib/open_in_new.svg'
   %h2 Improved Loading States
-  %p PUI didn't have an opinion about the passing of time up to this point. In my research I developed this concept that the passing of time is harder for your brain to recognize when the movement of a spinner is more dynamic. We enjoy picking out patterns everywhere we look but if the pattern is a little more dynamic than a simple circle rotation it makes us sit and watch to see what will happen next. It tricks our brain into waiting and it’s able to shorten the perceived load time. Keep in mind the size of the element being loaded and the estimated wait time play a big role in deciding how to animate a loading state. From a framework standpoint I wanted to lay down an opinion about the animation based on element size. You can see the smaller the spinner the more dramatic and rapid the movement. The large spinner is used for page loads, medium is used for a panel or zone on a page, the small one is used for small elements like buttons.
+  %p PUI didn't have an opinion about the passing of time up to this point. In my research I pieced together this concept that the passing of time is harder for your brain to recognize when the movement of a spinner is more dynamic. We enjoy picking out patterns everywhere we look but if the pattern is a little more dynamic than a simple circle rotation it makes us sit and watch to see what will happen next. It tricks our brain into waiting and it’s able to shorten the perceived load time.
+  %p Keep in mind the size of the element being loaded and the estimated wait time play a big role in deciding how to animate a loading state. From a framework standpoint I wanted to lay down an opinion about the animation based on element size. You can see the smaller the spinner the more dramatic and rapid the movement. The large spinner is used for page loads, medium is used for a panel or zone on a page, the small one is used for small elements like buttons.
+
   .grid.mvxl
     .col.txt-c.col-sm
       .mbxl
@@ -78,7 +91,15 @@
         =partial 'images/loading/spinner.svg'
 
   %h2 Icon System
-  %p We were growing tired of the Fontawesome icons and wanted to start working towards building our own icon set. Fontawesome is a great product and I highly recommend it for getting a project started quickly but we needed a more professional look that aligned with our brand aesthetic. We were debating doing direct SVGs for quality and accessibility reasons or a font icon for ease of use. Again I dug deep and utilized the collective knowledge of the internet to come to a solution that works great for us. We decided to use React to build out a simple component that can will generate an SVG based on its matching name in a folder. We also built this into a number of other components like buttons so they can use the same system. One of the major drawbacks to SVG icons vs. font icons is that SVGs are treated like normal elements inside of text so they automatically align to the baseline of the text they are based to. If we have a padding based into the SVGs this suddenly gets annoying because you have to custom place every single SVG you set next to a text element. By using a consistent wrangling class and applying a modifier class we are able to pull the icon down when using the `.icon-baseline` modifier to align perfectly with the text. This gives us the beautiful easy use of an icon font with the quality and accessibility of SVGs.
+  %p
+    We were growing tired of the Fontawesome icons and wanted to start working towards building our own icon set. Fontawesome is a great product and I highly recommend it for getting a project started quickly but we needed a more professional look that aligned with our brand aesthetic. We were debating doing direct SVGs for quality and accessibility reasons or a font icon for ease of use. Again, I dug deep and utilized the collective knowledge of the internet to come to a solution that works great for us.
+  %p
+    We decided to use React to build out a simple component that can will generate an SVG icon based on its matching name in a folder. We also built this into a number of other components like buttons so they can use the same system. One of the major drawbacks to SVG icons vs. font icons is that SVGs are treated like normal
+    %code div
+    elements and don’t align neatly with text. If we have a padding baked into the SVGs this gets annoying because you have to custom place every single SVG you set next to a text element. By using a consistent wrangling class and applying a modifier class we are able to pull the icon down when using the
+    %code .icon-baseline
+    modifier to align perfectly with the text. This gives us the beautiful easy use of an icon font with the quality and accessibility of SVGs.
+
   .img-wrap
     %a.no-link{:href => "images/portfolio/svg-icons.png", "data-featherlight" => "image"}
       %img.img-handler{:src => "images/portfolio/svg-icons.png"}
@@ -91,7 +112,7 @@
       .svgicon.svg-baseline
         =partial 'images/svg-lib/open_in_new.svg'
   %h2 New Style Guide
-  %p Contribution is a major component for Pivotal UI’s continued growth. We recently launched a new style guide which was a collaboration of multiple designers and the PUI team. Still a work in progress but the in page React and HTML editable examples are great for experimentation.
+  %p Contribution is a major component for Pivotal UI’s continued growth. We recently launched a new style guide which was a collaboration of multiple designers and the PUI team. Still very much a work in progress but our goal was to simplify the contribution method for designers and developers. One key feature is the in-page React and HTML editable examples which are great for experimentation.
   .default-type.mbl
     %a{:href => "https://styleguide.pivotal.io", :target => "_blank"}
       .svgicon.svg-baseline
