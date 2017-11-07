@@ -31,7 +31,7 @@
 
   }
   .page {
-    padding-top:calc(50vh - 212px);
+    // padding-top:calc(50vh - 212px);
   }
 
 
@@ -178,8 +178,13 @@
     margin-bottom: calc(100vh - 680px);
     // pointer-events: none;
   }
+  #hello {
+    height: 100vh;
+  }
   .content-first {
-
+    //margin-top: calc(50vh - 211px); //+1px h
+    top: 50%;
+    transform: translateY(-50%);
   }
   .welcome {
     // position: absolute;
