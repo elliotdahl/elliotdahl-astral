@@ -260,3 +260,12 @@
 #projects {
   margin-bottom:96px;
 }
+.projectimg {
+  img {
+    outline:solid 2px $purple-dark;
+  }
+  &:hover img {
+    outline:solid 2px $p-link-hover;
+    transition: all .15s ease-out;
+  }
+}
