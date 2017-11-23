@@ -51,31 +51,35 @@ title: Elliot Dahl
           = link_to("design systems", "https://medium.com/@Elliotdahl", target: '_blank') + ","
           and advocate for end-to-end UX. Currently designing developer experiences at
           = link_to("Pivotal Cloud Foundry", "https://pivotal.io/platform", target: '_blank') + "."
-          I spend the rest of my time drawing spaceships, backpacking Northern California, and reading science fiction.
-        %p.mbn
-          This portfolio will explain a little bit about my design style and how I work. I've prepared a
-          = link_to("product", "#product") + ","
-          a
-          = link_to("feature", "#feature")
-          on that product, and a
-          = link_to("design system", "#design-system") + "."
-          Following that you can learn a little about my
-          = link_to("career path", "#career")
-          and some of my
-          = link_to("side projects", "#projects") + "."
+          I spend the rest of my time drawing spaceships, backpacking in the woods, and reading science fiction.
+        -# %p.mbn
+        -#   This portfolio will explain a little bit about my design style and how I work. I've prepared a
+        -#   = link_to("product", "#product") + ","
+        -#   a
+        -#   = link_to("feature", "#feature")
+        -#   on that product, and a
+        -#   = link_to("design system", "#design-system") + "."
+        -#   Following that you can learn a little about my
+        -#   = link_to("career path", "#career")
+        -#   and some of my
+        -#   = link_to("side projects", "#projects") + "."
 
 
 
       .draw-box
-    #product{"data-aos" => "fade-up", "data-aos-delay" => "100", "data-aos-duration" => "500", "data-aos-easing" => "ease-out-quad", "data-aos-offset" => "50"}
+    #product.section-block{"data-aos" => "fade-up", "data-aos-delay" => "200", "data-aos-duration" => "500", "data-aos-easing" => "ease-out-quad", "data-aos-offset" => "100"}
       =partial 'shared/product'
-    #feature
+    #feature.section-block{"data-aos" => "fade-up", "data-aos-delay" => "200", "data-aos-duration" => "500", "data-aos-easing" => "ease-out-quad", "data-aos-offset" => "100"}
+      .section-spacer
       =partial 'shared/feature'
-    #design-system
+    #design-system.section-block{"data-aos" => "fade-up", "data-aos-delay" => "200", "data-aos-duration" => "500", "data-aos-easing" => "ease-out-quad", "data-aos-offset" => "100"}
+      .section-spacer
       =partial 'shared/design-system'
-    #career
+    #career.section-block{"data-aos" => "fade-up", "data-aos-delay" => "200", "data-aos-duration" => "500", "data-aos-easing" => "ease-out-quad", "data-aos-offset" => "100"}
+      .section-spacer
       =partial 'shared/career'
-    #projects
+    #projects.section-block{"data-aos" => "fade-up", "data-aos-delay" => "200", "data-aos-duration" => "500", "data-aos-easing" => "ease-out-quad", "data-aos-offset" => "100"}
+      .section-spacer
       =partial 'shared/projects'
 
 
