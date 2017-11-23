@@ -9,10 +9,9 @@
       margin-right:144px;
     }
     section.section-head {
-      .section-head-content {
-        margin-left: 56px;
-        margin-right: 56px;
-      }
+      margin-left: 56px;
+      margin-right: 136px;
+      left:-8px;
     }
   }
 }
@@ -63,6 +62,8 @@
       padding:32px;
     }
     section.section-head {
+      margin-left:16px;
+      margin-right: 8px;
       .section-head-content {
         margin-left:16px;
         margin-right:16px;

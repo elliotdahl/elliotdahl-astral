@@ -18,12 +18,6 @@ title: Elliot Dahl
       .svgicon
         =partial 'images/svg-lib/menu.svg'
     .splash-nav.hide#menu
-      .grid
-        .col
-        .col.col-fixed
-          .menu-btn#menu-close
-            .svgicon
-              =partial 'images/svg-lib/close.svg'
       .nav-items#mobile-menu
         %a.active{:href => "#hello"} Hello
         %a{:href => "#product"} Product
@@ -31,6 +25,12 @@ title: Elliot Dahl
         %a{:href => "#design-system"} System
         %a{:href => "#career"} Career
         %a{:href => "#projects"} Projects
+      .grid
+        .col
+        .col.col-fixed
+          .menu-btn#menu-close
+            .svgicon
+              =partial 'images/svg-lib/close.svg'
     %nav#menu
       .nav-items
         %a.smoothscroll.active{:href => "#hello"} Hello
