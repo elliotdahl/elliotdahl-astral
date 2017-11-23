@@ -2,7 +2,8 @@
 layout: "nofollow-layout"
 title: Elliot Dahl
 ---
-
+:javascript
+  AOS.init();
 .page
   .page-frame
   .content-area
@@ -66,7 +67,7 @@ title: Elliot Dahl
 
 
       .draw-box
-    #product
+    #product{"data-aos" => "fade-up", "data-aos-delay" => "100", "data-aos-duration" => "500", "data-aos-easing" => "ease-out-quad", "data-aos-offset" => "50"}
       =partial 'shared/product'
     #feature
       =partial 'shared/feature'
