@@ -90,16 +90,16 @@
   nav {
     z-index: 1;
     position: fixed;
-    top:calc(50vh - 84px); //center this when finished
+    top:calc(50vh - 75px); //center to 150 height
     left:calc(50vw + 488px);
 
     .nav-items {
         a {
           display: block;
-          font-size: 12px;
-          line-height: 4px;
+          font-size: 14px;
+          line-height: 6px;
           font-weight: 600;
-          padding:10px 0;
+          padding:12px 0;
           color:transparent;
           &:hover {
             //color:$dark-blue-1;
@@ -111,8 +111,9 @@
             vertical-align: middle;
             margin-right: 4px;
             width:16px;
-            height: 1px;
-            background-color:$dark-blue-1;
+            height: 2px;
+            background-color:$purple-light;
+            opacity: .5;
             transition: all .15s ease-out;
           }
           &:hover {
@@ -121,6 +122,7 @@
               width:24px;
               height: 2px;
               background-color:$purple-dark;
+              opacity: 1;
               transition: all .15s ease-out;
             }
           }
@@ -131,6 +133,7 @@
           width:24px;
           height: 2px;
           background-color:$purple-dark;
+          opacity: 1;
           transition: all .15s ease-out;
         }
       }

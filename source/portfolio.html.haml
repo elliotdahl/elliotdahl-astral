@@ -33,11 +33,12 @@ title: Elliot Dahl
               =partial 'images/svg-lib/close.svg'
     %nav#menu
       .nav-items
-        %a.smoothscroll.active{:href => "#hello"} Hello
+        %a.smoothscroll.active{:href => "#hello"}
+          Hello
         %a.smoothscroll{:href => "#product"} Product
         %a.smoothscroll{:href => "#feature"} Feature
         %a.smoothscroll{:href => "#design-system"} System
-        %a.smoothscroll{:href => "#career"} Career
+        -# %a.smoothscroll{:href => "#career"} Career
         %a.smoothscroll{:href => "#projects"} Projects
     #hello
       %section.content.rounded.content-first
@@ -67,18 +68,18 @@ title: Elliot Dahl
 
 
       .draw-box
-    #product.section-block{"data-aos" => "fade-up", "data-aos-delay" => "200", "data-aos-duration" => "500", "data-aos-easing" => "ease-out-quad", "data-aos-offset" => "100"}
+    #product.section-block
       =partial 'shared/product'
-    #feature.section-block{"data-aos" => "fade-up", "data-aos-delay" => "200", "data-aos-duration" => "500", "data-aos-easing" => "ease-out-quad", "data-aos-offset" => "100"}
+    #feature.section-block
       .section-spacer
       =partial 'shared/feature'
-    #design-system.section-block{"data-aos" => "fade-up", "data-aos-delay" => "200", "data-aos-duration" => "500", "data-aos-easing" => "ease-out-quad", "data-aos-offset" => "100"}
+    #design-system.section-block
       .section-spacer
       =partial 'shared/design-system'
-    #career.section-block{"data-aos" => "fade-up", "data-aos-delay" => "200", "data-aos-duration" => "500", "data-aos-easing" => "ease-out-quad", "data-aos-offset" => "100"}
-      .section-spacer
-      =partial 'shared/career'
-    #projects.section-block{"data-aos" => "fade-up", "data-aos-delay" => "200", "data-aos-duration" => "500", "data-aos-easing" => "ease-out-quad", "data-aos-offset" => "100"}
+    #career.section-block
+      -# .section-spacer
+      -# =partial 'shared/career'
+    #projects.section-block
       .section-spacer
       =partial 'shared/projects'
 
