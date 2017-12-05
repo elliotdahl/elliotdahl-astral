@@ -285,33 +285,13 @@
   position: relative;
   img {
     outline:solid 2px $purple-dark;
+    &:hover {
+      outline:solid 2px $p-link-hover;
+      transition: all .15s ease-out;
+    }
   }
   .img-overlay {
     position: relative;
   }
-  &:hover .img-overlay {
-    // outline:solid 2px $p-link-hover;
-    // transition: all .15s ease-out;
-    &::before {
-      content:"";
-      z-index: 1;
-      position: absolute;
-      top: 0;
-      width:100%;
-      height: calc(100% - 7px);
-      background-color: $dark-blue-1;
-      opacity: .2;
-    }
-    &::after {
-      content:"Visit Site";
-      z-index: 2;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 24px;
-      border:solid 2px $purple-dark;
-      padding:8px 16px;
-    }
-  }
+
 }
