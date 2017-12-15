@@ -272,26 +272,27 @@
       }
     }
   }
-}
-#projects .social-icons {
-  position: absolute;
-  right:16px;
-  bottom:-64px;
-}
-#projects {
-  margin-bottom:96px;
-}
-.projectimg {
-  position: relative;
-  img {
-    outline:solid 2px $purple-dark;
-    &:hover {
-      outline:solid 2px $p-link-hover;
-      transition: all .15s ease-out;
-    }
-  }
-  .img-overlay {
-    position: relative;
-  }
 
+  #projects .social-icons {
+    position: absolute;
+    right:16px;
+    bottom:-64px;
+  }
+  #projects {
+    margin-bottom:96px;
+  }
+  .projectimg {
+    position: relative;
+    img {
+      outline:solid 2px $purple-dark;
+      &:hover {
+        outline:solid 2px $p-link-hover;
+        transition: all .15s ease-out;
+      }
+    }
+    .img-overlay {
+      position: relative;
+    }
+
+  }
 }

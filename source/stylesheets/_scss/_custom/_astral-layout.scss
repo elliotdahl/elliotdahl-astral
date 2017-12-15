@@ -231,7 +231,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e9399', end
   }
   .intro-panel {
     position: absolute;
-  	bottom:-247px;
+  	bottom:-247px; 
+    // bottom:-344px;
   	transition: all .25s ease-out;
   	background-color: $card-bg;
       color: $card-font-color;
